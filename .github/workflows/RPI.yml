@@ -31,7 +31,7 @@ jobs:
           password: ${{ secrets.PASS }}          
           port: 4243
           script: |
-            cd /home/pi/metabrawlapi
+            cd /home/pi/metabrawlapi/src
             find . ! -name '.env' -type f -exec rm -f {} +
         
       - name: copy file via ssh password
@@ -42,4 +42,4 @@ jobs:
           password: ${{ secrets.PASS }}          
           port: ${{ secrets.PORT }} 
           source: "*"
-          target: "/home/pi/metabrawlapi"
+          target: "/home/pi/metabrawlapi/src"
