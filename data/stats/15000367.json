@@ -1,0 +1,2602 @@
+{
+    "teams": [
+        {
+            "teamStats": {
+                "winNumber": 5,
+                "winRate": 1,
+                "pickRate": 0.012594458438287154,
+                "pickNumber": 5,
+                "brawlers": [
+                    "GROM",
+                    "RICO",
+                    "STU"
+                ]
+            }
+        },
+        {
+            "teamStats": {
+                "winNumber": 1,
+                "winRate": 1,
+                "pickRate": 0.0025188916876574307,
+                "pickNumber": 1,
+                "brawlers": [
+                    "FANG",
+                    "SQUEAK",
+                    "STU"
+                ]
+            }
+        },
+        {
+            "teamStats": {
+                "winNumber": 27,
+                "winRate": 0.8181818181818182,
+                "pickRate": 0.08312342569269521,
+                "pickNumber": 33,
+                "brawlers": [
+                    "GROM",
+                    "LEON",
+                    "RICO"
+                ]
+            }
+        },
+        {
+            "teamStats": {
+                "winNumber": 2,
+                "winRate": 1,
+                "pickRate": 0.005037783375314861,
+                "pickNumber": 2,
+                "brawlers": [
+                    "8-BIT",
+                    "EDGAR",
+                    "LEON"
+                ]
+            }
+        },
+        {
+            "teamStats": {
+                "winNumber": 2,
+                "winRate": 0.5,
+                "pickRate": 0.010075566750629723,
+                "pickNumber": 4,
+                "brawlers": [
+                    "LOLA",
+                    "MORTIS",
+                    "RICO"
+                ]
+            }
+        },
+        {
+            "teamStats": {
+                "winNumber": 2,
+                "winRate": 0.5,
+                "pickRate": 0.010075566750629723,
+                "pickNumber": 4,
+                "brawlers": [
+                    "BUZZ",
+                    "MORTIS",
+                    "RICO"
+                ]
+            }
+        },
+        {
+            "teamStats": {
+                "winNumber": 1,
+                "winRate": 1,
+                "pickRate": 0.0025188916876574307,
+                "pickNumber": 1,
+                "brawlers": [
+                    "LEON",
+                    "PIPER",
+                    "SHELLY"
+                ]
+            }
+        },
+        {
+            "teamStats": {
+                "winNumber": 55,
+                "winRate": 0.5092592592592593,
+                "pickRate": 0.27204030226700254,
+                "pickNumber": 108,
+                "brawlers": [
+                    "BO",
+                    "MORTIS",
+                    "TARA"
+                ]
+            }
+        },
+        {
+            "teamStats": {
+                "winNumber": 21,
+                "winRate": 0.7241379310344828,
+                "pickRate": 0.07304785894206549,
+                "pickNumber": 29,
+                "brawlers": [
+                    "DARRYL",
+                    "GROM",
+                    "RICO"
+                ]
+            }
+        },
+        {
+            "teamStats": {
+                "winNumber": 2,
+                "winRate": 1,
+                "pickRate": 0.005037783375314861,
+                "pickNumber": 2,
+                "brawlers": [
+                    "BYRON",
+                    "GENE",
+                    "LEON"
+                ]
+            }
+        },
+        {
+            "teamStats": {
+                "winNumber": 1,
+                "winRate": 1,
+                "pickRate": 0.0025188916876574307,
+                "pickNumber": 1,
+                "brawlers": [
+                    "COLONEL RUFFS",
+                    "MORTIS",
+                    "SHELLY"
+                ]
+            }
+        },
+        {
+            "teamStats": {
+                "winNumber": 1,
+                "winRate": 0.1111111111111111,
+                "pickRate": 0.022670025188916875,
+                "pickNumber": 9,
+                "brawlers": [
+                    "COLONEL RUFFS",
+                    "FANG",
+                    "TICK"
+                ]
+            }
+        },
+        {
+            "teamStats": {
+                "winNumber": 3,
+                "winRate": 1,
+                "pickRate": 0.007556675062972292,
+                "pickNumber": 3,
+                "brawlers": [
+                    "BELLE",
+                    "COLT",
+                    "PIPER"
+                ]
+            }
+        },
+        {
+            "teamStats": {
+                "winNumber": 4,
+                "winRate": 0.6666666666666666,
+                "pickRate": 0.015113350125944584,
+                "pickNumber": 6,
+                "brawlers": [
+                    "LEON",
+                    "RICO",
+                    "SPIKE"
+                ]
+            }
+        },
+        {
+            "teamStats": {
+                "winNumber": 2,
+                "winRate": 1,
+                "pickRate": 0.005037783375314861,
+                "pickNumber": 2,
+                "brawlers": [
+                    "BELLE",
+                    "GROM",
+                    "PIPER"
+                ]
+            }
+        },
+        {
+            "teamStats": {
+                "winNumber": 4,
+                "winRate": 0.4,
+                "pickRate": 0.02518891687657431,
+                "pickNumber": 10,
+                "brawlers": [
+                    "LEON",
+                    "MORTIS",
+                    "RICO"
+                ]
+            }
+        },
+        {
+            "teamStats": {
+                "winNumber": 6,
+                "winRate": 0.42857142857142855,
+                "pickRate": 0.03526448362720403,
+                "pickNumber": 14,
+                "brawlers": [
+                    "FANG",
+                    "PIPER",
+                    "RICO"
+                ]
+            }
+        },
+        {
+            "teamStats": {
+                "winNumber": 1,
+                "winRate": 1,
+                "pickRate": 0.0025188916876574307,
+                "pickNumber": 1,
+                "brawlers": [
+                    "DARRYL",
+                    "GALE",
+                    "SURGE"
+                ]
+            }
+        },
+        {
+            "teamStats": {
+                "winNumber": 1,
+                "winRate": 1,
+                "pickRate": 0.0025188916876574307,
+                "pickNumber": 1,
+                "brawlers": [
+                    "GENE",
+                    "LEON",
+                    "PIPER"
+                ]
+            }
+        },
+        {
+            "teamStats": {
+                "winNumber": 6,
+                "winRate": 1,
+                "pickRate": 0.015113350125944584,
+                "pickNumber": 6,
+                "brawlers": [
+                    "DARRYL",
+                    "GENE",
+                    "GROM"
+                ]
+            }
+        },
+        {
+            "teamStats": {
+                "winNumber": 1,
+                "winRate": 0.5,
+                "pickRate": 0.005037783375314861,
+                "pickNumber": 2,
+                "brawlers": [
+                    "BO",
+                    "NANI",
+                    "TICK"
+                ]
+            }
+        },
+        {
+            "teamStats": {
+                "winNumber": 3,
+                "winRate": 0.75,
+                "pickRate": 0.010075566750629723,
+                "pickNumber": 4,
+                "brawlers": [
+                    "BEA",
+                    "GROM",
+                    "RICO"
+                ]
+            }
+        },
+        {
+            "teamStats": {
+                "winNumber": 6,
+                "winRate": 0.75,
+                "pickRate": 0.020151133501259445,
+                "pickNumber": 8,
+                "brawlers": [
+                    "GROM",
+                    "PIPER",
+                    "RICO"
+                ]
+            }
+        },
+        {
+            "teamStats": {
+                "winNumber": 2,
+                "winRate": 1,
+                "pickRate": 0.005037783375314861,
+                "pickNumber": 2,
+                "brawlers": [
+                    "BROCK",
+                    "COLONEL RUFFS",
+                    "GROM"
+                ]
+            }
+        },
+        {
+            "teamStats": {
+                "winNumber": 11,
+                "winRate": 0.4583333333333333,
+                "pickRate": 0.060453400503778336,
+                "pickNumber": 24,
+                "brawlers": [
+                    "GROM",
+                    "MORTIS",
+                    "RICO"
+                ]
+            }
+        },
+        {
+            "teamStats": {
+                "winNumber": 2,
+                "winRate": 1,
+                "pickRate": 0.005037783375314861,
+                "pickNumber": 2,
+                "brawlers": [
+                    "CROW",
+                    "LEON",
+                    "MORTIS"
+                ]
+            }
+        },
+        {
+            "teamStats": {
+                "winNumber": 4,
+                "winRate": 1,
+                "pickRate": 0.010075566750629723,
+                "pickNumber": 4,
+                "brawlers": [
+                    "LOLA",
+                    "NANI",
+                    "SPROUT"
+                ]
+            }
+        },
+        {
+            "teamStats": {
+                "winNumber": 2,
+                "winRate": 1,
+                "pickRate": 0.005037783375314861,
+                "pickNumber": 2,
+                "brawlers": [
+                    "BARLEY",
+                    "BO",
+                    "RICO"
+                ]
+            }
+        },
+        {
+            "teamStats": {
+                "winNumber": 9,
+                "winRate": 0.5294117647058824,
+                "pickRate": 0.042821158690176324,
+                "pickNumber": 17,
+                "brawlers": [
+                    "BO",
+                    "GROM",
+                    "MORTIS"
+                ]
+            }
+        },
+        {
+            "teamStats": {
+                "winNumber": 1,
+                "winRate": 1,
+                "pickRate": 0.0025188916876574307,
+                "pickNumber": 1,
+                "brawlers": [
+                    "RICO",
+                    "SPIKE",
+                    "TICK"
+                ]
+            }
+        },
+        {
+            "teamStats": {
+                "winNumber": 2,
+                "winRate": 0.5,
+                "pickRate": 0.010075566750629723,
+                "pickNumber": 4,
+                "brawlers": [
+                    "BYRON",
+                    "GROM",
+                    "RICO"
+                ]
+            }
+        },
+        {
+            "teamStats": {
+                "winNumber": 5,
+                "winRate": 0.5,
+                "pickRate": 0.02518891687657431,
+                "pickNumber": 10,
+                "brawlers": [
+                    "DARRYL",
+                    "GROM",
+                    "LEON"
+                ]
+            }
+        },
+        {
+            "teamStats": {
+                "winNumber": 1,
+                "winRate": 1,
+                "pickRate": 0.0025188916876574307,
+                "pickNumber": 1,
+                "brawlers": [
+                    "CROW",
+                    "MORTIS",
+                    "PIPER"
+                ]
+            }
+        },
+        {
+            "teamStats": {
+                "winNumber": 1,
+                "winRate": 0.5,
+                "pickRate": 0.005037783375314861,
+                "pickNumber": 2,
+                "brawlers": [
+                    "BEA",
+                    "PIPER",
+                    "RICO"
+                ]
+            }
+        },
+        {
+            "teamStats": {
+                "winNumber": 1,
+                "winRate": 0.3333333333333333,
+                "pickRate": 0.007556675062972292,
+                "pickNumber": 3,
+                "brawlers": [
+                    "PIPER",
+                    "RICO",
+                    "TICK"
+                ]
+            }
+        },
+        {
+            "teamStats": {
+                "winNumber": 3,
+                "winRate": 1,
+                "pickRate": 0.007556675062972292,
+                "pickNumber": 3,
+                "brawlers": [
+                    "DARRYL",
+                    "RICO",
+                    "TICK"
+                ]
+            }
+        },
+        {
+            "teamStats": {
+                "winNumber": 2,
+                "winRate": 1,
+                "pickRate": 0.005037783375314861,
+                "pickNumber": 2,
+                "brawlers": [
+                    "8-BIT",
+                    "BO",
+                    "NANI"
+                ]
+            }
+        },
+        {
+            "teamStats": {
+                "winNumber": 2,
+                "winRate": 0.5,
+                "pickRate": 0.010075566750629723,
+                "pickNumber": 4,
+                "brawlers": [
+                    "BO",
+                    "GENE",
+                    "MORTIS"
+                ]
+            }
+        },
+        {
+            "teamStats": {
+                "winNumber": 2,
+                "winRate": 1,
+                "pickRate": 0.005037783375314861,
+                "pickNumber": 2,
+                "brawlers": [
+                    "BROCK",
+                    "DYNAMIKE",
+                    "TARA"
+                ]
+            }
+        },
+        {
+            "teamStats": {
+                "winNumber": 6,
+                "winRate": 0.6,
+                "pickRate": 0.02518891687657431,
+                "pickNumber": 10,
+                "brawlers": [
+                    "BO",
+                    "FANG",
+                    "TARA"
+                ]
+            }
+        },
+        {
+            "teamStats": {
+                "winNumber": 9,
+                "winRate": 0.5,
+                "pickRate": 0.04534005037783375,
+                "pickNumber": 18,
+                "brawlers": [
+                    "BO",
+                    "COLONEL RUFFS",
+                    "MORTIS"
+                ]
+            }
+        },
+        {
+            "teamStats": {
+                "winNumber": 5,
+                "winRate": 1,
+                "pickRate": 0.012594458438287154,
+                "pickNumber": 5,
+                "brawlers": [
+                    "BO",
+                    "FANG",
+                    "GENE"
+                ]
+            }
+        },
+        {
+            "teamStats": {
+                "winNumber": 3,
+                "winRate": 0.42857142857142855,
+                "pickRate": 0.017632241813602016,
+                "pickNumber": 7,
+                "brawlers": [
+                    "LEON",
+                    "PIPER",
+                    "RICO"
+                ]
+            }
+        },
+        {
+            "teamStats": {
+                "winNumber": 2,
+                "winRate": 0.5,
+                "pickRate": 0.010075566750629723,
+                "pickNumber": 4,
+                "brawlers": [
+                    "LEON",
+                    "RICO",
+                    "SPROUT"
+                ]
+            }
+        },
+        {
+            "teamStats": {
+                "winNumber": 2,
+                "winRate": 1,
+                "pickRate": 0.005037783375314861,
+                "pickNumber": 2,
+                "brawlers": [
+                    "DARRYL",
+                    "GENE",
+                    "MORTIS"
+                ]
+            }
+        },
+        {
+            "teamStats": {
+                "winNumber": 2,
+                "winRate": 1,
+                "pickRate": 0.005037783375314861,
+                "pickNumber": 2,
+                "brawlers": [
+                    "GENE",
+                    "GROM",
+                    "TARA"
+                ]
+            }
+        },
+        {
+            "teamStats": {
+                "winNumber": 1,
+                "winRate": 1,
+                "pickRate": 0.0025188916876574307,
+                "pickNumber": 1,
+                "brawlers": [
+                    "FANG",
+                    "LOLA",
+                    "MORTIS"
+                ]
+            }
+        },
+        {
+            "teamStats": {
+                "winNumber": 2,
+                "winRate": 1,
+                "pickRate": 0.005037783375314861,
+                "pickNumber": 2,
+                "brawlers": [
+                    "ASH",
+                    "BYRON",
+                    "GROM"
+                ]
+            }
+        },
+        {
+            "teamStats": {
+                "winNumber": 3,
+                "winRate": 0.6,
+                "pickRate": 0.012594458438287154,
+                "pickNumber": 5,
+                "brawlers": [
+                    "GROM",
+                    "LEON",
+                    "MORTIS"
+                ]
+            }
+        },
+        {
+            "teamStats": {
+                "winNumber": 7,
+                "winRate": 0.7,
+                "pickRate": 0.02518891687657431,
+                "pickNumber": 10,
+                "brawlers": [
+                    "BO",
+                    "FANG",
+                    "RICO"
+                ]
+            }
+        },
+        {
+            "teamStats": {
+                "winNumber": 2,
+                "winRate": 1,
+                "pickRate": 0.005037783375314861,
+                "pickNumber": 2,
+                "brawlers": [
+                    "BYRON",
+                    "DARRYL",
+                    "MORTIS"
+                ]
+            }
+        },
+        {
+            "teamStats": {
+                "winNumber": 6,
+                "winRate": 0.6,
+                "pickRate": 0.02518891687657431,
+                "pickNumber": 10,
+                "brawlers": [
+                    "DARRYL",
+                    "GENE",
+                    "RICO"
+                ]
+            }
+        },
+        {
+            "teamStats": {
+                "winNumber": 1,
+                "winRate": 1,
+                "pickRate": 0.0025188916876574307,
+                "pickNumber": 1,
+                "brawlers": [
+                    "FANG",
+                    "RICO",
+                    "STU"
+                ]
+            }
+        },
+        {
+            "teamStats": {
+                "winNumber": 1,
+                "winRate": 1,
+                "pickRate": 0.0025188916876574307,
+                "pickNumber": 1,
+                "brawlers": [
+                    "GROM",
+                    "MEG",
+                    "MORTIS"
+                ]
+            }
+        },
+        {
+            "teamStats": {
+                "winNumber": 2,
+                "winRate": 0.18181818181818182,
+                "pickRate": 0.027707808564231738,
+                "pickNumber": 11,
+                "brawlers": [
+                    "GENE",
+                    "GROM",
+                    "RICO"
+                ]
+            }
+        },
+        {
+            "teamStats": {
+                "winNumber": 1,
+                "winRate": 1,
+                "pickRate": 0.0025188916876574307,
+                "pickNumber": 1,
+                "brawlers": [
+                    "DYNAMIKE",
+                    "GROM",
+                    "SHELLY"
+                ]
+            }
+        },
+        {
+            "teamStats": {
+                "winNumber": 1,
+                "winRate": 1,
+                "pickRate": 0.0025188916876574307,
+                "pickNumber": 1,
+                "brawlers": [
+                    "BELLE",
+                    "LEON",
+                    "MORTIS"
+                ]
+            }
+        },
+        {
+            "teamStats": {
+                "winNumber": 1,
+                "winRate": 1,
+                "pickRate": 0.0025188916876574307,
+                "pickNumber": 1,
+                "brawlers": [
+                    "LEON",
+                    "RICO",
+                    "STU"
+                ]
+            }
+        },
+        {
+            "teamStats": {
+                "winNumber": 4,
+                "winRate": 0.5,
+                "pickRate": 0.020151133501259445,
+                "pickNumber": 8,
+                "brawlers": [
+                    "MORTIS",
+                    "RICO",
+                    "TICK"
+                ]
+            }
+        },
+        {
+            "teamStats": {
+                "winNumber": 1,
+                "winRate": 1,
+                "pickRate": 0.0025188916876574307,
+                "pickNumber": 1,
+                "brawlers": [
+                    "BUZZ",
+                    "CARL",
+                    "COLONEL RUFFS"
+                ]
+            }
+        },
+        {
+            "teamStats": {
+                "winNumber": 3,
+                "winRate": 0.75,
+                "pickRate": 0.010075566750629723,
+                "pickNumber": 4,
+                "brawlers": [
+                    "BO",
+                    "SHELLY",
+                    "SURGE"
+                ]
+            }
+        },
+        {
+            "teamStats": {
+                "winNumber": 3,
+                "winRate": 0.25,
+                "pickRate": 0.030226700251889168,
+                "pickNumber": 12,
+                "brawlers": [
+                    "MORTIS",
+                    "PIPER",
+                    "RICO"
+                ]
+            }
+        },
+        {
+            "teamStats": {
+                "winNumber": 1,
+                "winRate": 1,
+                "pickRate": 0.0025188916876574307,
+                "pickNumber": 1,
+                "brawlers": [
+                    "ASH",
+                    "MORTIS",
+                    "RICO"
+                ]
+            }
+        },
+        {
+            "teamStats": {
+                "winNumber": 3,
+                "winRate": 0.75,
+                "pickRate": 0.010075566750629723,
+                "pickNumber": 4,
+                "brawlers": [
+                    "GENE",
+                    "MEG",
+                    "MORTIS"
+                ]
+            }
+        },
+        {
+            "teamStats": {
+                "winNumber": 1,
+                "winRate": 1,
+                "pickRate": 0.0025188916876574307,
+                "pickNumber": 1,
+                "brawlers": [
+                    "AMBER",
+                    "LEON",
+                    "STU"
+                ]
+            }
+        },
+        {
+            "teamStats": {
+                "winNumber": 2,
+                "winRate": 0.5,
+                "pickRate": 0.010075566750629723,
+                "pickNumber": 4,
+                "brawlers": [
+                    "8-BIT",
+                    "BO",
+                    "TARA"
+                ]
+            }
+        },
+        {
+            "teamStats": {
+                "winNumber": 1,
+                "winRate": 1,
+                "pickRate": 0.0025188916876574307,
+                "pickNumber": 1,
+                "brawlers": [
+                    "BYRON",
+                    "FANG",
+                    "ROSA"
+                ]
+            }
+        },
+        {
+            "teamStats": {
+                "winNumber": 4,
+                "winRate": 1,
+                "pickRate": 0.010075566750629723,
+                "pickNumber": 4,
+                "brawlers": [
+                    "COLONEL RUFFS",
+                    "DARRYL",
+                    "MORTIS"
+                ]
+            }
+        },
+        {
+            "teamStats": {
+                "winNumber": 1,
+                "winRate": 1,
+                "pickRate": 0.0025188916876574307,
+                "pickNumber": 1,
+                "brawlers": [
+                    "GROM",
+                    "MORTIS",
+                    "POCO"
+                ]
+            }
+        },
+        {
+            "teamStats": {
+                "winNumber": 1,
+                "winRate": 1,
+                "pickRate": 0.0025188916876574307,
+                "pickNumber": 1,
+                "brawlers": [
+                    "FRANK",
+                    "MORTIS",
+                    "PIPER"
+                ]
+            }
+        },
+        {
+            "teamStats": {
+                "winNumber": 1,
+                "winRate": 1,
+                "pickRate": 0.0025188916876574307,
+                "pickNumber": 1,
+                "brawlers": [
+                    "BIBI",
+                    "SHELLY",
+                    "TARA"
+                ]
+            }
+        },
+        {
+            "teamStats": {
+                "winNumber": 2,
+                "winRate": 1,
+                "pickRate": 0.005037783375314861,
+                "pickNumber": 2,
+                "brawlers": [
+                    "GROM",
+                    "LEON",
+                    "TARA"
+                ]
+            }
+        },
+        {
+            "teamStats": {
+                "winNumber": 1,
+                "winRate": 1,
+                "pickRate": 0.0025188916876574307,
+                "pickNumber": 1,
+                "brawlers": [
+                    "AMBER",
+                    "CROW",
+                    "EL PRIMO"
+                ]
+            }
+        },
+        {
+            "teamStats": {
+                "winNumber": 1,
+                "winRate": 1,
+                "pickRate": 0.0025188916876574307,
+                "pickNumber": 1,
+                "brawlers": [
+                    "COLT",
+                    "FANG",
+                    "PIPER"
+                ]
+            }
+        },
+        {
+            "teamStats": {
+                "winNumber": 2,
+                "winRate": 0.6666666666666666,
+                "pickRate": 0.007556675062972292,
+                "pickNumber": 3,
+                "brawlers": [
+                    "FANG",
+                    "LOU",
+                    "TICK"
+                ]
+            }
+        },
+        {
+            "teamStats": {
+                "winNumber": 2,
+                "winRate": 1,
+                "pickRate": 0.005037783375314861,
+                "pickNumber": 2,
+                "brawlers": [
+                    "BELLE",
+                    "LEON",
+                    "PIPER"
+                ]
+            }
+        },
+        {
+            "teamStats": {
+                "winNumber": 2,
+                "winRate": 0.5,
+                "pickRate": 0.010075566750629723,
+                "pickNumber": 4,
+                "brawlers": [
+                    "GENE",
+                    "RICO",
+                    "SQUEAK"
+                ]
+            }
+        },
+        {
+            "teamStats": {
+                "winNumber": 1,
+                "winRate": 1,
+                "pickRate": 0.0025188916876574307,
+                "pickNumber": 1,
+                "brawlers": [
+                    "BUZZ",
+                    "RICO",
+                    "SURGE"
+                ]
+            }
+        },
+        {
+            "teamStats": {
+                "winNumber": 1,
+                "winRate": 1,
+                "pickRate": 0.0025188916876574307,
+                "pickNumber": 1,
+                "brawlers": [
+                    "BYRON",
+                    "FANG",
+                    "LEON"
+                ]
+            }
+        },
+        {
+            "teamStats": {
+                "winNumber": 1,
+                "winRate": 1,
+                "pickRate": 0.0025188916876574307,
+                "pickNumber": 1,
+                "brawlers": [
+                    "MORTIS",
+                    "PENNY",
+                    "RICO"
+                ]
+            }
+        },
+        {
+            "teamStats": {
+                "winNumber": 1,
+                "winRate": 1,
+                "pickRate": 0.0025188916876574307,
+                "pickNumber": 1,
+                "brawlers": [
+                    "FANG",
+                    "LEON",
+                    "MORTIS"
+                ]
+            }
+        },
+        {
+            "teamStats": {
+                "winNumber": 2,
+                "winRate": 0.5,
+                "pickRate": 0.010075566750629723,
+                "pickNumber": 4,
+                "brawlers": [
+                    "COLONEL RUFFS",
+                    "LEON",
+                    "SPROUT"
+                ]
+            }
+        },
+        {
+            "teamStats": {
+                "winNumber": 2,
+                "winRate": 1,
+                "pickRate": 0.005037783375314861,
+                "pickNumber": 2,
+                "brawlers": [
+                    "BELLE",
+                    "MORTIS",
+                    "RICO"
+                ]
+            }
+        },
+        {
+            "teamStats": {
+                "winNumber": 1,
+                "winRate": 1,
+                "pickRate": 0.0025188916876574307,
+                "pickNumber": 1,
+                "brawlers": [
+                    "FANG",
+                    "MORTIS",
+                    "NANI"
+                ]
+            }
+        },
+        {
+            "teamStats": {
+                "winNumber": 1,
+                "winRate": 1,
+                "pickRate": 0.0025188916876574307,
+                "pickNumber": 1,
+                "brawlers": [
+                    "BROCK",
+                    "CROW",
+                    "DYNAMIKE"
+                ]
+            }
+        },
+        {
+            "teamStats": {
+                "winNumber": 1,
+                "winRate": 1,
+                "pickRate": 0.0025188916876574307,
+                "pickNumber": 1,
+                "brawlers": [
+                    "CARL",
+                    "DARRYL",
+                    "RICO"
+                ]
+            }
+        },
+        {
+            "teamStats": {
+                "winNumber": 1,
+                "winRate": 1,
+                "pickRate": 0.0025188916876574307,
+                "pickNumber": 1,
+                "brawlers": [
+                    "BULL",
+                    "GROM",
+                    "LEON"
+                ]
+            }
+        },
+        {
+            "teamStats": {
+                "winNumber": 1,
+                "winRate": 1,
+                "pickRate": 0.0025188916876574307,
+                "pickNumber": 1,
+                "brawlers": [
+                    "GRIFF",
+                    "SANDY",
+                    "SPROUT"
+                ]
+            }
+        },
+        {
+            "teamStats": {
+                "winNumber": 1,
+                "winRate": 1,
+                "pickRate": 0.0025188916876574307,
+                "pickNumber": 1,
+                "brawlers": [
+                    "EDGAR",
+                    "ROSA",
+                    "STU"
+                ]
+            }
+        },
+        {
+            "teamStats": {
+                "winNumber": 1,
+                "winRate": 1,
+                "pickRate": 0.0025188916876574307,
+                "pickNumber": 1,
+                "brawlers": [
+                    "BEA",
+                    "RICO",
+                    "SPIKE"
+                ]
+            }
+        },
+        {
+            "teamStats": {
+                "winNumber": 1,
+                "winRate": 1,
+                "pickRate": 0.0025188916876574307,
+                "pickNumber": 1,
+                "brawlers": [
+                    "BYRON",
+                    "MORTIS",
+                    "RICO"
+                ]
+            }
+        },
+        {
+            "teamStats": {
+                "winNumber": 1,
+                "winRate": 1,
+                "pickRate": 0.0025188916876574307,
+                "pickNumber": 1,
+                "brawlers": [
+                    "MORTIS",
+                    "PAM",
+                    "PIPER"
+                ]
+            }
+        },
+        {
+            "teamStats": {
+                "winNumber": 1,
+                "winRate": 1,
+                "pickRate": 0.0025188916876574307,
+                "pickNumber": 1,
+                "brawlers": [
+                    "BULL",
+                    "SHELLY",
+                    "SURGE"
+                ]
+            }
+        },
+        {
+            "teamStats": {
+                "winNumber": 1,
+                "winRate": 1,
+                "pickRate": 0.0025188916876574307,
+                "pickNumber": 1,
+                "brawlers": [
+                    "GENE",
+                    "SPROUT",
+                    "TICK"
+                ]
+            }
+        },
+        {
+            "teamStats": {
+                "winNumber": 1,
+                "winRate": 1,
+                "pickRate": 0.0025188916876574307,
+                "pickNumber": 1,
+                "brawlers": [
+                    "GROM",
+                    "POCO",
+                    "RICO"
+                ]
+            }
+        },
+        {
+            "teamStats": {
+                "winNumber": 1,
+                "winRate": 0.3333333333333333,
+                "pickRate": 0.007556675062972292,
+                "pickNumber": 3,
+                "brawlers": [
+                    "BO",
+                    "COLONEL RUFFS",
+                    "GENE"
+                ]
+            }
+        },
+        {
+            "teamStats": {
+                "winNumber": 4,
+                "winRate": 0.5714285714285714,
+                "pickRate": 0.017632241813602016,
+                "pickNumber": 7,
+                "brawlers": [
+                    "CARL",
+                    "RICO",
+                    "SQUEAK"
+                ]
+            }
+        },
+        {
+            "teamStats": {
+                "winNumber": 1,
+                "winRate": 1,
+                "pickRate": 0.0025188916876574307,
+                "pickNumber": 1,
+                "brawlers": [
+                    "DARRYL",
+                    "LEON",
+                    "PIPER"
+                ]
+            }
+        },
+        {
+            "teamStats": {
+                "winNumber": 1,
+                "winRate": 0.3333333333333333,
+                "pickRate": 0.007556675062972292,
+                "pickNumber": 3,
+                "brawlers": [
+                    "FANG",
+                    "GROM",
+                    "RICO"
+                ]
+            }
+        },
+        {
+            "teamStats": {
+                "winNumber": 2,
+                "winRate": 0.5,
+                "pickRate": 0.010075566750629723,
+                "pickNumber": 4,
+                "brawlers": [
+                    "GENE",
+                    "PIPER",
+                    "SQUEAK"
+                ]
+            }
+        },
+        {
+            "teamStats": {
+                "winNumber": 1,
+                "winRate": 1,
+                "pickRate": 0.0025188916876574307,
+                "pickNumber": 1,
+                "brawlers": [
+                    "MORTIS",
+                    "PIPER",
+                    "STU"
+                ]
+            }
+        },
+        {
+            "teamStats": {
+                "winNumber": 1,
+                "winRate": 0.5,
+                "pickRate": 0.005037783375314861,
+                "pickNumber": 2,
+                "brawlers": [
+                    "NANI",
+                    "RICO",
+                    "TARA"
+                ]
+            }
+        },
+        {
+            "teamStats": {
+                "winNumber": 1,
+                "winRate": 0.5,
+                "pickRate": 0.005037783375314861,
+                "pickNumber": 2,
+                "brawlers": [
+                    "BO",
+                    "MORTIS",
+                    "RICO"
+                ]
+            }
+        },
+        {
+            "teamStats": {
+                "winNumber": 1,
+                "winRate": 0.5,
+                "pickRate": 0.005037783375314861,
+                "pickNumber": 2,
+                "brawlers": [
+                    "BUZZ",
+                    "CROW",
+                    "RICO"
+                ]
+            }
+        },
+        {
+            "teamStats": {
+                "winNumber": 1,
+                "winRate": 1,
+                "pickRate": 0.0025188916876574307,
+                "pickNumber": 1,
+                "brawlers": [
+                    "EMZ",
+                    "GROM",
+                    "LEON"
+                ]
+            }
+        },
+        {
+            "teamStats": {
+                "winNumber": 3,
+                "winRate": 0.375,
+                "pickRate": 0.020151133501259445,
+                "pickNumber": 8,
+                "brawlers": [
+                    "GENE",
+                    "LEON",
+                    "RICO"
+                ]
+            }
+        },
+        {
+            "teamStats": {
+                "winNumber": 1,
+                "winRate": 1,
+                "pickRate": 0.0025188916876574307,
+                "pickNumber": 1,
+                "brawlers": [
+                    "BELLE",
+                    "CROW",
+                    "MORTIS"
+                ]
+            }
+        },
+        {
+            "teamStats": {
+                "winNumber": 2,
+                "winRate": 1,
+                "pickRate": 0.005037783375314861,
+                "pickNumber": 2,
+                "brawlers": [
+                    "MEG",
+                    "MORTIS",
+                    "PIPER"
+                ]
+            }
+        },
+        {
+            "teamStats": {
+                "winNumber": 1,
+                "winRate": 0.3333333333333333,
+                "pickRate": 0.007556675062972292,
+                "pickNumber": 3,
+                "brawlers": [
+                    "FANG",
+                    "GENE",
+                    "PIPER"
+                ]
+            }
+        },
+        {
+            "teamStats": {
+                "winNumber": 1,
+                "winRate": 1,
+                "pickRate": 0.0025188916876574307,
+                "pickNumber": 1,
+                "brawlers": [
+                    "COLETTE",
+                    "FANG",
+                    "TARA"
+                ]
+            }
+        },
+        {
+            "teamStats": {
+                "winNumber": 1,
+                "winRate": 1,
+                "pickRate": 0.0025188916876574307,
+                "pickNumber": 1,
+                "brawlers": [
+                    "BUZZ",
+                    "FANG",
+                    "SPIKE"
+                ]
+            }
+        },
+        {
+            "teamStats": {
+                "winNumber": 1,
+                "winRate": 0.25,
+                "pickRate": 0.010075566750629723,
+                "pickNumber": 4,
+                "brawlers": [
+                    "GROM",
+                    "LEON",
+                    "SURGE"
+                ]
+            }
+        },
+        {
+            "teamStats": {
+                "winNumber": 1,
+                "winRate": 1,
+                "pickRate": 0.0025188916876574307,
+                "pickNumber": 1,
+                "brawlers": [
+                    "DARRYL",
+                    "MR. P",
+                    "PIPER"
+                ]
+            }
+        },
+        {
+            "teamStats": {
+                "winNumber": 1,
+                "winRate": 1,
+                "pickRate": 0.0025188916876574307,
+                "pickNumber": 1,
+                "brawlers": [
+                    "COLONEL RUFFS",
+                    "PIPER",
+                    "SPROUT"
+                ]
+            }
+        },
+        {
+            "teamStats": {
+                "winNumber": 1,
+                "winRate": 1,
+                "pickRate": 0.0025188916876574307,
+                "pickNumber": 1,
+                "brawlers": [
+                    "EMZ",
+                    "MEG",
+                    "ROSA"
+                ]
+            }
+        },
+        {
+            "teamStats": {
+                "winNumber": 1,
+                "winRate": 1,
+                "pickRate": 0.0025188916876574307,
+                "pickNumber": 1,
+                "brawlers": [
+                    "EDGAR",
+                    "RICO",
+                    "TARA"
+                ]
+            }
+        },
+        {
+            "teamStats": {
+                "winNumber": 1,
+                "winRate": 1,
+                "pickRate": 0.0025188916876574307,
+                "pickNumber": 1,
+                "brawlers": [
+                    "ASH",
+                    "GROM",
+                    "PIPER"
+                ]
+            }
+        },
+        {
+            "teamStats": {
+                "winNumber": 1,
+                "winRate": 1,
+                "pickRate": 0.0025188916876574307,
+                "pickNumber": 1,
+                "brawlers": [
+                    "FANG",
+                    "MORTIS",
+                    "TARA"
+                ]
+            }
+        },
+        {
+            "teamStats": {
+                "winNumber": 3,
+                "winRate": 1,
+                "pickRate": 0.007556675062972292,
+                "pickNumber": 3,
+                "brawlers": [
+                    "COLONEL RUFFS",
+                    "MORTIS",
+                    "RICO"
+                ]
+            }
+        },
+        {
+            "teamStats": {
+                "winNumber": 1,
+                "winRate": 1,
+                "pickRate": 0.0025188916876574307,
+                "pickNumber": 1,
+                "brawlers": [
+                    "BUZZ",
+                    "FANG",
+                    "LEON"
+                ]
+            }
+        },
+        {
+            "teamStats": {
+                "winNumber": 1,
+                "winRate": 1,
+                "pickRate": 0.0025188916876574307,
+                "pickNumber": 1,
+                "brawlers": [
+                    "COLT",
+                    "MORTIS",
+                    "STU"
+                ]
+            }
+        },
+        {
+            "teamStats": {
+                "winNumber": 1,
+                "winRate": 0.14285714285714285,
+                "pickRate": 0.017632241813602016,
+                "pickNumber": 7,
+                "brawlers": [
+                    "BO",
+                    "GROM",
+                    "TARA"
+                ]
+            }
+        },
+        {
+            "teamStats": {
+                "winNumber": 1,
+                "winRate": 0.25,
+                "pickRate": 0.010075566750629723,
+                "pickNumber": 4,
+                "brawlers": [
+                    "GENE",
+                    "MORTIS",
+                    "RICO"
+                ]
+            }
+        },
+        {
+            "teamStats": {
+                "winNumber": 1,
+                "winRate": 1,
+                "pickRate": 0.0025188916876574307,
+                "pickNumber": 1,
+                "brawlers": [
+                    "COLT",
+                    "GALE",
+                    "MAX"
+                ]
+            }
+        },
+        {
+            "teamStats": {
+                "winNumber": 1,
+                "winRate": 1,
+                "pickRate": 0.0025188916876574307,
+                "pickNumber": 1,
+                "brawlers": [
+                    "DARRYL",
+                    "EDGAR",
+                    "SPROUT"
+                ]
+            }
+        },
+        {
+            "teamStats": {
+                "winNumber": 1,
+                "winRate": 1,
+                "pickRate": 0.0025188916876574307,
+                "pickNumber": 1,
+                "brawlers": [
+                    "COLONEL RUFFS",
+                    "GROM",
+                    "SPIKE"
+                ]
+            }
+        },
+        {
+            "teamStats": {
+                "winNumber": 1,
+                "winRate": 1,
+                "pickRate": 0.0025188916876574307,
+                "pickNumber": 1,
+                "brawlers": [
+                    "BELLE",
+                    "EL PRIMO",
+                    "FANG"
+                ]
+            }
+        },
+        {
+            "teamStats": {
+                "winNumber": 1,
+                "winRate": 1,
+                "pickRate": 0.0025188916876574307,
+                "pickNumber": 1,
+                "brawlers": [
+                    "COLETTE",
+                    "PAM",
+                    "RICO"
+                ]
+            }
+        },
+        {
+            "teamStats": {
+                "winNumber": 1,
+                "winRate": 1,
+                "pickRate": 0.0025188916876574307,
+                "pickNumber": 1,
+                "brawlers": [
+                    "BIBI",
+                    "DYNAMIKE",
+                    "MORTIS"
+                ]
+            }
+        },
+        {
+            "teamStats": {
+                "winNumber": 1,
+                "winRate": 1,
+                "pickRate": 0.0025188916876574307,
+                "pickNumber": 1,
+                "brawlers": [
+                    "MORTIS",
+                    "RICO",
+                    "STU"
+                ]
+            }
+        },
+        {
+            "teamStats": {
+                "winNumber": 1,
+                "winRate": 1,
+                "pickRate": 0.0025188916876574307,
+                "pickNumber": 1,
+                "brawlers": [
+                    "AMBER",
+                    "FANG",
+                    "MORTIS"
+                ]
+            }
+        },
+        {
+            "teamStats": {
+                "winNumber": 1,
+                "winRate": 1,
+                "pickRate": 0.0025188916876574307,
+                "pickNumber": 1,
+                "brawlers": [
+                    "AMBER",
+                    "COLT",
+                    "RICO"
+                ]
+            }
+        },
+        {
+            "teamStats": {
+                "winNumber": 1,
+                "winRate": 1,
+                "pickRate": 0.0025188916876574307,
+                "pickNumber": 1,
+                "brawlers": [
+                    "BYRON",
+                    "STU",
+                    "TARA"
+                ]
+            }
+        },
+        {
+            "teamStats": {
+                "winNumber": 1,
+                "winRate": 1,
+                "pickRate": 0.0025188916876574307,
+                "pickNumber": 1,
+                "brawlers": [
+                    "LEON",
+                    "MORTIS",
+                    "SPROUT"
+                ]
+            }
+        },
+        {
+            "teamStats": {
+                "winNumber": 1,
+                "winRate": 1,
+                "pickRate": 0.0025188916876574307,
+                "pickNumber": 1,
+                "brawlers": [
+                    "ASH",
+                    "EDGAR",
+                    "PIPER"
+                ]
+            }
+        },
+        {
+            "teamStats": {
+                "winNumber": 1,
+                "winRate": 1,
+                "pickRate": 0.0025188916876574307,
+                "pickNumber": 1,
+                "brawlers": [
+                    "LEON",
+                    "PENNY",
+                    "SQUEAK"
+                ]
+            }
+        },
+        {
+            "teamStats": {
+                "winNumber": 2,
+                "winRate": 0.6666666666666666,
+                "pickRate": 0.007556675062972292,
+                "pickNumber": 3,
+                "brawlers": [
+                    "AMBER",
+                    "GENE",
+                    "GROM"
+                ]
+            }
+        },
+        {
+            "teamStats": {
+                "winNumber": 1,
+                "winRate": 1,
+                "pickRate": 0.0025188916876574307,
+                "pickNumber": 1,
+                "brawlers": [
+                    "DARRYL",
+                    "EMZ",
+                    "SURGE"
+                ]
+            }
+        },
+        {
+            "teamStats": {
+                "winNumber": 1,
+                "winRate": 1,
+                "pickRate": 0.0025188916876574307,
+                "pickNumber": 1,
+                "brawlers": [
+                    "COLETTE",
+                    "COLT",
+                    "DYNAMIKE"
+                ]
+            }
+        },
+        {
+            "teamStats": {
+                "winNumber": 1,
+                "winRate": 1,
+                "pickRate": 0.0025188916876574307,
+                "pickNumber": 1,
+                "brawlers": [
+                    "GROM",
+                    "LEON",
+                    "STU"
+                ]
+            }
+        },
+        {
+            "teamStats": {
+                "winNumber": 1,
+                "winRate": 1,
+                "pickRate": 0.0025188916876574307,
+                "pickNumber": 1,
+                "brawlers": [
+                    "BO",
+                    "SHELLY",
+                    "SPIKE"
+                ]
+            }
+        },
+        {
+            "teamStats": {
+                "winNumber": 1,
+                "winRate": 1,
+                "pickRate": 0.0025188916876574307,
+                "pickNumber": 1,
+                "brawlers": [
+                    "BULL",
+                    "FANG",
+                    "RICO"
+                ]
+            }
+        },
+        {
+            "teamStats": {
+                "winNumber": 1,
+                "winRate": 1,
+                "pickRate": 0.0025188916876574307,
+                "pickNumber": 1,
+                "brawlers": [
+                    "GENE",
+                    "JESSIE",
+                    "LEON"
+                ]
+            }
+        },
+        {
+            "teamStats": {
+                "winNumber": 1,
+                "winRate": 1,
+                "pickRate": 0.0025188916876574307,
+                "pickNumber": 1,
+                "brawlers": [
+                    "FANG",
+                    "GALE",
+                    "TICK"
+                ]
+            }
+        },
+        {
+            "teamStats": {
+                "winNumber": 1,
+                "winRate": 1,
+                "pickRate": 0.0025188916876574307,
+                "pickNumber": 1,
+                "brawlers": [
+                    "FANG",
+                    "GALE",
+                    "MORTIS"
+                ]
+            }
+        },
+        {
+            "teamStats": {
+                "winNumber": 1,
+                "winRate": 0.3333333333333333,
+                "pickRate": 0.007556675062972292,
+                "pickNumber": 3,
+                "brawlers": [
+                    "BO",
+                    "LEON",
+                    "TARA"
+                ]
+            }
+        },
+        {
+            "teamStats": {
+                "winNumber": 1,
+                "winRate": 1,
+                "pickRate": 0.0025188916876574307,
+                "pickNumber": 1,
+                "brawlers": [
+                    "LEON",
+                    "MORTIS",
+                    "NANI"
+                ]
+            }
+        },
+        {
+            "teamStats": {
+                "winNumber": 1,
+                "winRate": 1,
+                "pickRate": 0.0025188916876574307,
+                "pickNumber": 1,
+                "brawlers": [
+                    "BO",
+                    "FANG",
+                    "MORTIS"
+                ]
+            }
+        },
+        {
+            "teamStats": {
+                "winNumber": 1,
+                "winRate": 1,
+                "pickRate": 0.0025188916876574307,
+                "pickNumber": 1,
+                "brawlers": [
+                    "BYRON",
+                    "FANG",
+                    "GENE"
+                ]
+            }
+        },
+        {
+            "teamStats": {
+                "winNumber": 1,
+                "winRate": 1,
+                "pickRate": 0.0025188916876574307,
+                "pickNumber": 1,
+                "brawlers": [
+                    "COLT",
+                    "FANG",
+                    "GROM"
+                ]
+            }
+        },
+        {
+            "teamStats": {
+                "winNumber": 1,
+                "winRate": 0.5,
+                "pickRate": 0.005037783375314861,
+                "pickNumber": 2,
+                "brawlers": [
+                    "LEON",
+                    "RICO",
+                    "SHELLY"
+                ]
+            }
+        },
+        {
+            "teamStats": {
+                "winNumber": 1,
+                "winRate": 1,
+                "pickRate": 0.0025188916876574307,
+                "pickNumber": 1,
+                "brawlers": [
+                    "DYNAMIKE",
+                    "MORTIS",
+                    "SURGE"
+                ]
+            }
+        },
+        {
+            "teamStats": {
+                "winNumber": 1,
+                "winRate": 1,
+                "pickRate": 0.0025188916876574307,
+                "pickNumber": 1,
+                "brawlers": [
+                    "GENE",
+                    "RICO",
+                    "SPIKE"
+                ]
+            }
+        },
+        {
+            "teamStats": {
+                "winNumber": 1,
+                "winRate": 1,
+                "pickRate": 0.0025188916876574307,
+                "pickNumber": 1,
+                "brawlers": [
+                    "FANG",
+                    "GENE",
+                    "RICO"
+                ]
+            }
+        },
+        {
+            "teamStats": {
+                "winNumber": 1,
+                "winRate": 0.5,
+                "pickRate": 0.005037783375314861,
+                "pickNumber": 2,
+                "brawlers": [
+                    "GENE",
+                    "PIPER",
+                    "RICO"
+                ]
+            }
+        },
+        {
+            "teamStats": {
+                "winNumber": 1,
+                "winRate": 1,
+                "pickRate": 0.0025188916876574307,
+                "pickNumber": 1,
+                "brawlers": [
+                    "DARRYL",
+                    "FANG",
+                    "GROM"
+                ]
+            }
+        },
+        {
+            "teamStats": {
+                "winNumber": 1,
+                "winRate": 1,
+                "pickRate": 0.0025188916876574307,
+                "pickNumber": 1,
+                "brawlers": [
+                    "BROCK",
+                    "EDGAR",
+                    "LEON"
+                ]
+            }
+        },
+        {
+            "teamStats": {
+                "winNumber": 1,
+                "winRate": 1,
+                "pickRate": 0.0025188916876574307,
+                "pickNumber": 1,
+                "brawlers": [
+                    "COLT",
+                    "DARRYL",
+                    "NANI"
+                ]
+            }
+        },
+        {
+            "teamStats": {
+                "winNumber": 1,
+                "winRate": 1,
+                "pickRate": 0.0025188916876574307,
+                "pickNumber": 1,
+                "brawlers": [
+                    "FANG",
+                    "GROM",
+                    "MAX"
+                ]
+            }
+        },
+        {
+            "teamStats": {
+                "winNumber": 1,
+                "winRate": 1,
+                "pickRate": 0.0025188916876574307,
+                "pickNumber": 1,
+                "brawlers": [
+                    "BO",
+                    "GENE",
+                    "TARA"
+                ]
+            }
+        },
+        {
+            "teamStats": {
+                "winNumber": 1,
+                "winRate": 0.5,
+                "pickRate": 0.005037783375314861,
+                "pickNumber": 2,
+                "brawlers": [
+                    "FANG",
+                    "MORTIS",
+                    "RICO"
+                ]
+            }
+        },
+        {
+            "teamStats": {
+                "winNumber": 1,
+                "winRate": 1,
+                "pickRate": 0.0025188916876574307,
+                "pickNumber": 1,
+                "brawlers": [
+                    "LEON",
+                    "SPIKE",
+                    "TICK"
+                ]
+            }
+        }
+    ],
+    "solo": [
+        {
+            "soloStats": {
+                "winNumber": 127,
+                "winRate": 0.5644444444444444,
+                "pickRate": 0.28337531486146095,
+                "pickNumber": 225,
+                "brawler": "GROM"
+            }
+        },
+        {
+            "soloStats": {
+                "winNumber": 166,
+                "winRate": 0.5,
+                "pickRate": 0.4181360201511335,
+                "pickNumber": 332,
+                "brawler": "RICO"
+            }
+        },
+        {
+            "soloStats": {
+                "winNumber": 15,
+                "winRate": 0.7894736842105263,
+                "pickRate": 0.02392947103274559,
+                "pickNumber": 19,
+                "brawler": "STU"
+            }
+        },
+        {
+            "soloStats": {
+                "winNumber": 110,
+                "winRate": 0.5069124423963134,
+                "pickRate": 0.27329974811083124,
+                "pickNumber": 217,
+                "brawler": "BO"
+            }
+        },
+        {
+            "soloStats": {
+                "winNumber": 152,
+                "winRate": 0.5033112582781457,
+                "pickRate": 0.380352644836272,
+                "pickNumber": 302,
+                "brawler": "MORTIS"
+            }
+        },
+        {
+            "soloStats": {
+                "winNumber": 78,
+                "winRate": 0.5032258064516129,
+                "pickRate": 0.1952141057934509,
+                "pickNumber": 155,
+                "brawler": "TARA"
+            }
+        },
+        {
+            "soloStats": {
+                "winNumber": 53,
+                "winRate": 0.4774774774774775,
+                "pickRate": 0.1397984886649874,
+                "pickNumber": 111,
+                "brawler": "FANG"
+            }
+        },
+        {
+            "soloStats": {
+                "winNumber": 10,
+                "winRate": 0.5555555555555556,
+                "pickRate": 0.022670025188916875,
+                "pickNumber": 18,
+                "brawler": "SQUEAK"
+            }
+        },
+        {
+            "soloStats": {
+                "winNumber": 2,
+                "winRate": 0.2857142857142857,
+                "pickRate": 0.008816120906801008,
+                "pickNumber": 7,
+                "brawler": "MAX"
+            }
+        },
+        {
+            "soloStats": {
+                "winNumber": 9,
+                "winRate": 0.28125,
+                "pickRate": 0.04030226700251889,
+                "pickNumber": 32,
+                "brawler": "SURGE"
+            }
+        },
+        {
+            "soloStats": {
+                "winNumber": 84,
+                "winRate": 0.6,
+                "pickRate": 0.17632241813602015,
+                "pickNumber": 140,
+                "brawler": "LEON"
+            }
+        },
+        {
+            "soloStats": {
+                "winNumber": 6,
+                "winRate": 0.6666666666666666,
+                "pickRate": 0.011335012594458438,
+                "pickNumber": 9,
+                "brawler": "8-BIT"
+            }
+        },
+        {
+            "soloStats": {
+                "winNumber": 7,
+                "winRate": 0.25,
+                "pickRate": 0.03526448362720403,
+                "pickNumber": 28,
+                "brawler": "EDGAR"
+            }
+        },
+        {
+            "soloStats": {
+                "winNumber": 7,
+                "winRate": 0.30434782608695654,
+                "pickRate": 0.028967254408060455,
+                "pickNumber": 23,
+                "brawler": "BUZZ"
+            }
+        },
+        {
+            "soloStats": {
+                "winNumber": 7,
+                "winRate": 0.7,
+                "pickRate": 0.012594458438287154,
+                "pickNumber": 10,
+                "brawler": "LOLA"
+            }
+        },
+        {
+            "soloStats": {
+                "winNumber": 7,
+                "winRate": 0.30434782608695654,
+                "pickRate": 0.028967254408060455,
+                "pickNumber": 23,
+                "brawler": "CROW"
+            }
+        },
+        {
+            "soloStats": {
+                "winNumber": 45,
+                "winRate": 0.44554455445544555,
+                "pickRate": 0.12720403022670027,
+                "pickNumber": 101,
+                "brawler": "PIPER"
+            }
+        },
+        {
+            "soloStats": {
+                "winNumber": 10,
+                "winRate": 0.5555555555555556,
+                "pickRate": 0.022670025188916875,
+                "pickNumber": 18,
+                "brawler": "SHELLY"
+            }
+        },
+        {
+            "soloStats": {
+                "winNumber": 26,
+                "winRate": 0.49056603773584906,
+                "pickRate": 0.06675062972292191,
+                "pickNumber": 53,
+                "brawler": "COLONEL RUFFS"
+            }
+        },
+        {
+            "soloStats": {
+                "winNumber": 16,
+                "winRate": 0.34782608695652173,
+                "pickRate": 0.05793450881612091,
+                "pickNumber": 46,
+                "brawler": "TICK"
+            }
+        },
+        {
+            "soloStats": {
+                "winNumber": 11,
+                "winRate": 0.44,
+                "pickRate": 0.031486146095717885,
+                "pickNumber": 25,
+                "brawler": "SPIKE"
+            }
+        },
+        {
+            "soloStats": {
+                "winNumber": 57,
+                "winRate": 0.6867469879518072,
+                "pickRate": 0.10453400503778337,
+                "pickNumber": 83,
+                "brawler": "DARRYL"
+            }
+        },
+        {
+            "soloStats": {
+                "winNumber": 13,
+                "winRate": 0.41935483870967744,
+                "pickRate": 0.03904282115869018,
+                "pickNumber": 31,
+                "brawler": "BYRON"
+            }
+        },
+        {
+            "soloStats": {
+                "winNumber": 50,
+                "winRate": 0.5,
+                "pickRate": 0.12594458438287154,
+                "pickNumber": 100,
+                "brawler": "GENE"
+            }
+        },
+        {
+            "soloStats": {
+                "winNumber": 2,
+                "winRate": 0.14285714285714285,
+                "pickRate": 0.017632241813602016,
+                "pickNumber": 14,
+                "brawler": "EL PRIMO"
+            }
+        },
+        {
+            "soloStats": {
+                "winNumber": 13,
+                "winRate": 0.5652173913043478,
+                "pickRate": 0.028967254408060455,
+                "pickNumber": 23,
+                "brawler": "SPROUT"
+            }
+        },
+        {
+            "soloStats": {
+                "winNumber": 12,
+                "winRate": 0.6666666666666666,
+                "pickRate": 0.022670025188916875,
+                "pickNumber": 18,
+                "brawler": "BELLE"
+            }
+        },
+        {
+            "soloStats": {
+                "winNumber": 10,
+                "winRate": 0.37037037037037035,
+                "pickRate": 0.03400503778337532,
+                "pickNumber": 27,
+                "brawler": "COLT"
+            }
+        },
+        {
+            "soloStats": {
+                "winNumber": 6,
+                "winRate": 0.42857142857142855,
+                "pickRate": 0.017632241813602016,
+                "pickNumber": 14,
+                "brawler": "CARL"
+            }
+        },
+        {
+            "soloStats": {
+                "winNumber": 7,
+                "winRate": 0.3684210526315789,
+                "pickRate": 0.02392947103274559,
+                "pickNumber": 19,
+                "brawler": "DYNAMIKE"
+            }
+        },
+        {
+            "soloStats": {
+                "winNumber": 6,
+                "winRate": 0.21428571428571427,
+                "pickRate": 0.03526448362720403,
+                "pickNumber": 28,
+                "brawler": "BROCK"
+            }
+        },
+        {
+            "soloStats": {
+                "winNumber": 4,
+                "winRate": 0.6666666666666666,
+                "pickRate": 0.007556675062972292,
+                "pickNumber": 6,
+                "brawler": "GALE"
+            }
+        },
+        {
+            "soloStats": {
+                "winNumber": 3,
+                "winRate": 0.5,
+                "pickRate": 0.007556675062972292,
+                "pickNumber": 6,
+                "brawler": "EMZ"
+            }
+        },
+        {
+            "soloStats": {
+                "winNumber": 11,
+                "winRate": 0.6470588235294118,
+                "pickRate": 0.021410579345088162,
+                "pickNumber": 17,
+                "brawler": "NANI"
+            }
+        },
+        {
+            "soloStats": {
+                "winNumber": 2,
+                "winRate": 0.4,
+                "pickRate": 0.006297229219143577,
+                "pickNumber": 5,
+                "brawler": "BARLEY"
+            }
+        },
+        {
+            "soloStats": {
+                "winNumber": 5,
+                "winRate": 0.3125,
+                "pickRate": 0.020151133501259445,
+                "pickNumber": 16,
+                "brawler": "BEA"
+            }
+        },
+        {
+            "soloStats": {
+                "winNumber": 7,
+                "winRate": 0.5384615384615384,
+                "pickRate": 0.0163727959697733,
+                "pickNumber": 13,
+                "brawler": "MEG"
+            }
+        },
+        {
+            "soloStats": {
+                "winNumber": 1,
+                "winRate": 0.3333333333333333,
+                "pickRate": 0.003778337531486146,
+                "pickNumber": 3,
+                "brawler": "GRIFF"
+            }
+        },
+        {
+            "soloStats": {
+                "winNumber": 2,
+                "winRate": 0.4,
+                "pickRate": 0.006297229219143577,
+                "pickNumber": 5,
+                "brawler": "BIBI"
+            }
+        },
+        {
+            "soloStats": {
+                "winNumber": 5,
+                "winRate": 0.625,
+                "pickRate": 0.010075566750629723,
+                "pickNumber": 8,
+                "brawler": "ASH"
+            }
+        },
+        {
+            "soloStats": {
+                "winNumber": 2,
+                "winRate": 0.4,
+                "pickRate": 0.006297229219143577,
+                "pickNumber": 5,
+                "brawler": "POCO"
+            }
+        },
+        {
+            "soloStats": {
+                "winNumber": 3,
+                "winRate": 0.5,
+                "pickRate": 0.007556675062972292,
+                "pickNumber": 6,
+                "brawler": "BULL"
+            }
+        },
+        {
+            "soloStats": {
+                "winNumber": 6,
+                "winRate": 0.6,
+                "pickRate": 0.012594458438287154,
+                "pickNumber": 10,
+                "brawler": "AMBER"
+            }
+        },
+        {
+            "soloStats": {
+                "winNumber": 3,
+                "winRate": 0.5,
+                "pickRate": 0.007556675062972292,
+                "pickNumber": 6,
+                "brawler": "ROSA"
+            }
+        },
+        {
+            "soloStats": {
+                "winNumber": 1,
+                "winRate": 0.3333333333333333,
+                "pickRate": 0.003778337531486146,
+                "pickNumber": 3,
+                "brawler": "JESSIE"
+            }
+        },
+        {
+            "soloStats": {
+                "winNumber": 1,
+                "winRate": 1,
+                "pickRate": 0.0012594458438287153,
+                "pickNumber": 1,
+                "brawler": "FRANK"
+            }
+        },
+        {
+            "soloStats": {
+                "winNumber": 2,
+                "winRate": 0.5,
+                "pickRate": 0.005037783375314861,
+                "pickNumber": 4,
+                "brawler": "LOU"
+            }
+        },
+        {
+            "soloStats": {
+                "winNumber": 1,
+                "winRate": 0.25,
+                "pickRate": 0.005037783375314861,
+                "pickNumber": 4,
+                "brawler": "MR. P"
+            }
+        },
+        {
+            "soloStats": {
+                "winNumber": 2,
+                "winRate": 0.6666666666666666,
+                "pickRate": 0.003778337531486146,
+                "pickNumber": 3,
+                "brawler": "PENNY"
+            }
+        },
+        {
+            "soloStats": {
+                "winNumber": 1,
+                "winRate": 1,
+                "pickRate": 0.0012594458438287153,
+                "pickNumber": 1,
+                "brawler": "SANDY"
+            }
+        },
+        {
+            "soloStats": {
+                "winNumber": 2,
+                "winRate": 1,
+                "pickRate": 0.0025188916876574307,
+                "pickNumber": 2,
+                "brawler": "PAM"
+            }
+        },
+        {
+            "soloStats": {
+                "winNumber": 3,
+                "winRate": 0.6,
+                "pickRate": 0.006297229219143577,
+                "pickNumber": 5,
+                "brawler": "COLETTE"
+            }
+        },
+        {
+            "soloStats": {
+                "winNumber": 0,
+                "winRate": 0.0,
+                "pickRate": 0.0012594458438287153,
+                "pickNumber": 1,
+                "brawler": "NITA"
+            }
+        },
+        {
+            "soloStats": {
+                "winNumber": 0,
+                "winRate": 0.0,
+                "pickRate": 0.0012594458438287153,
+                "pickNumber": 1,
+                "brawler": "JACKY"
+            }
+        }
+    ],
+    "battlesNumber": 397,
+    "mode": "knockout",
+    "map": "Goldarm Gulch",
+    "startTime": "20220218T200000.000Z"
+}

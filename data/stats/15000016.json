@@ -1,0 +1,260 @@
+{
+    "solo": [
+        {
+            "soloStats": {
+                "winNumber": 18,
+                "winRate": 0.5806451612903226,
+                "pickRate": 0.08611111111111111,
+                "pickNumber": 31,
+                "brawler": "EL PRIMO"
+            }
+        },
+        {
+            "soloStats": {
+                "winNumber": 7,
+                "winRate": 0.5833333333333334,
+                "pickRate": 0.03333333333333333,
+                "pickNumber": 12,
+                "brawler": "TARA"
+            }
+        },
+        {
+            "soloStats": {
+                "winNumber": 8,
+                "winRate": 0.5333333333333333,
+                "pickRate": 0.041666666666666664,
+                "pickNumber": 15,
+                "brawler": "JACKY"
+            }
+        },
+        {
+            "soloStats": {
+                "winNumber": 10,
+                "winRate": 0.5,
+                "pickRate": 0.05555555555555555,
+                "pickNumber": 20,
+                "brawler": "SHELLY"
+            }
+        },
+        {
+            "soloStats": {
+                "winNumber": 1,
+                "winRate": 0.3333333333333333,
+                "pickRate": 0.008333333333333333,
+                "pickNumber": 3,
+                "brawler": "COLT"
+            }
+        },
+        {
+            "soloStats": {
+                "winNumber": 1,
+                "winRate": 0.3333333333333333,
+                "pickRate": 0.008333333333333333,
+                "pickNumber": 3,
+                "brawler": "STU"
+            }
+        },
+        {
+            "soloStats": {
+                "winNumber": 5,
+                "winRate": 0.5,
+                "pickRate": 0.027777777777777776,
+                "pickNumber": 10,
+                "brawler": "POCO"
+            }
+        },
+        {
+            "soloStats": {
+                "winNumber": 9,
+                "winRate": 0.5625,
+                "pickRate": 0.044444444444444446,
+                "pickNumber": 16,
+                "brawler": "FANG"
+            }
+        },
+        {
+            "soloStats": {
+                "winNumber": 3,
+                "winRate": 0.75,
+                "pickRate": 0.011111111111111112,
+                "pickNumber": 4,
+                "brawler": "GRIFF"
+            }
+        },
+        {
+            "soloStats": {
+                "winNumber": 1,
+                "winRate": 0.2,
+                "pickRate": 0.013888888888888888,
+                "pickNumber": 5,
+                "brawler": "SQUEAK"
+            }
+        },
+        {
+            "soloStats": {
+                "winNumber": 3,
+                "winRate": 0.5,
+                "pickRate": 0.016666666666666666,
+                "pickNumber": 6,
+                "brawler": "DARRYL"
+            }
+        },
+        {
+            "soloStats": {
+                "winNumber": 2,
+                "winRate": 0.5,
+                "pickRate": 0.011111111111111112,
+                "pickNumber": 4,
+                "brawler": "BULL"
+            }
+        },
+        {
+            "soloStats": {
+                "winNumber": 4,
+                "winRate": 0.4444444444444444,
+                "pickRate": 0.025,
+                "pickNumber": 9,
+                "brawler": "ROSA"
+            }
+        },
+        {
+            "soloStats": {
+                "winNumber": 3,
+                "winRate": 0.75,
+                "pickRate": 0.011111111111111112,
+                "pickNumber": 4,
+                "brawler": "GALE"
+            }
+        },
+        {
+            "soloStats": {
+                "winNumber": 3,
+                "winRate": 1,
+                "pickRate": 0.008333333333333333,
+                "pickNumber": 3,
+                "brawler": "SPIKE"
+            }
+        },
+        {
+            "soloStats": {
+                "winNumber": 1,
+                "winRate": 0.5,
+                "pickRate": 0.005555555555555556,
+                "pickNumber": 2,
+                "brawler": "EMZ"
+            }
+        },
+        {
+            "soloStats": {
+                "winNumber": 0,
+                "winRate": 0.0,
+                "pickRate": 0.002777777777777778,
+                "pickNumber": 1,
+                "brawler": "RICO"
+            }
+        },
+        {
+            "soloStats": {
+                "winNumber": 2,
+                "winRate": 0.2857142857142857,
+                "pickRate": 0.019444444444444445,
+                "pickNumber": 7,
+                "brawler": "BO"
+            }
+        },
+        {
+            "soloStats": {
+                "winNumber": 3,
+                "winRate": 1,
+                "pickRate": 0.008333333333333333,
+                "pickNumber": 3,
+                "brawler": "LOU"
+            }
+        },
+        {
+            "soloStats": {
+                "winNumber": 3,
+                "winRate": 0.42857142857142855,
+                "pickRate": 0.019444444444444445,
+                "pickNumber": 7,
+                "brawler": "EDGAR"
+            }
+        },
+        {
+            "soloStats": {
+                "winNumber": 0,
+                "winRate": 0.0,
+                "pickRate": 0.005555555555555556,
+                "pickNumber": 2,
+                "brawler": "PIPER"
+            }
+        },
+        {
+            "soloStats": {
+                "winNumber": 2,
+                "winRate": 0.5,
+                "pickRate": 0.011111111111111112,
+                "pickNumber": 4,
+                "brawler": "SANDY"
+            }
+        },
+        {
+            "soloStats": {
+                "winNumber": 0,
+                "winRate": 0.0,
+                "pickRate": 0.008333333333333333,
+                "pickNumber": 3,
+                "brawler": "MAX"
+            }
+        },
+        {
+            "soloStats": {
+                "winNumber": 0,
+                "winRate": 0.0,
+                "pickRate": 0.005555555555555556,
+                "pickNumber": 2,
+                "brawler": "BEA"
+            }
+        },
+        {
+            "soloStats": {
+                "winNumber": 0,
+                "winRate": 0.0,
+                "pickRate": 0.002777777777777778,
+                "pickNumber": 1,
+                "brawler": "MORTIS"
+            }
+        },
+        {
+            "soloStats": {
+                "winNumber": 1,
+                "winRate": 1,
+                "pickRate": 0.002777777777777778,
+                "pickNumber": 1,
+                "brawler": "LEON"
+            }
+        },
+        {
+            "soloStats": {
+                "winNumber": 0,
+                "winRate": 0.0,
+                "pickRate": 0.002777777777777778,
+                "pickNumber": 1,
+                "brawler": "8-BIT"
+            }
+        },
+        {
+            "soloStats": {
+                "winNumber": 0,
+                "winRate": 0.0,
+                "pickRate": 0.002777777777777778,
+                "pickNumber": 1,
+                "brawler": "NITA"
+            }
+        }
+    ],
+    "battlesNumber": 180,
+    "mode": "soloShowdown",
+    "map": "Feast or Famine",
+    "startTime": "20220218T200000.000Z"
+}
