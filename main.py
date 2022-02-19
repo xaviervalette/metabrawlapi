@@ -26,6 +26,8 @@ MAIN
 """
 start2 = time.time()
 getCurrentEvents(token)
+delOldCurrentBattles()
+#rotateEvents("battles", maxBattlesPerEvent)
 
 print("\n***getRankings***\n")
 ranks = getRankings(token, countries_list, player_limit)
@@ -37,7 +39,7 @@ callTime = end2 - start2
 
 print("\n***STORE BATTLES***\n")
 start3 = time.time()
-newBattle, interestingBattle, totalBattle = storeBattles(
+newBattle, duppBattle, interestingBattle, totalBattle = storeBattles(
     battlelogs, limitNumberOfBattles, expectedModes, maxBattlesPerEvent)
 end3 = time.time()
 storeBattleTime = end3 - start3
@@ -50,18 +52,19 @@ computeBestBrawler = end4 - start4
 
 now = datetime.now()
 dateTime = now.strftime("%Y-%m-%d %H:%M:%S")
-processHistory = {"datetime": dateTime,
-                  "callTime": callTime,
-                  "storeBattleTime": storeBattleTime,
-                  "computeBestBrawler": computeBestBrawler,
-                  "countryNumber": len(countries_list),
-                  "playerNumber": player_limit,
-                  "newBattle": newBattle,
-                  "dupBattle": interestingBattle,
-                  "interestingBattle": interestingBattle,
-                  "totalBattle": totalBattle,
-                  "countryList": countries_list
-                  }
+processHistory = {
+    "datetime": dateTime,
+    "callTime": int(callTime),
+    "storeBattleTime": int(storeBattleTime),
+    "computeBestBrawler": int(computeBestBrawler),
+    "countryNumber": len(countries_list),
+    "playerNumber": player_limit,
+    "newBattle": newBattle,
+    "dupBattle": duppBattle,
+    "interestingBattle": interestingBattle,
+    "totalBattle": totalBattle,
+    "countryList": countries_list
+}
 
 print(processHistory)
 # WRITE LOGS

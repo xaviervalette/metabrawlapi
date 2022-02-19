@@ -26,6 +26,8 @@ backPath = os.environ["BRAWL_COACH_BACKPATH"]
 logPath = os.environ["BRAWL_COACH_LOGPATH"]
 token = os.environ["BRAWL_COACH_TOKEN"]
 baseUrl = os.environ["BRAWL_STARS_API_BASE_URL"]
+currentBattlePath = dataPath+"/battles/current"
+allBattlePath = dataPath+"/battles/all"
 
 """
 MAKE REST API GET CALL TO RETRIEVE BRAWL STARS SPECIFIC PLAYER STATS USING PLAYER TAG
@@ -38,7 +40,6 @@ def getPlayerStats(token, tag):
         "GET", baseUrl+"/players/"+urlTag+"/battlelog", headers=headers, data=data)
     battlelogs = response.json()
     return battlelogs
-
 
 """
 MAKE REST API GET CALL TO RETRIEVE BRAWL STARS CURRENT EVENTS
@@ -58,7 +59,6 @@ def getCurrentEvents(token):
         json.dump(current_events, f)
     return
 
-
 """
 READ AND RETURN BRAWL STARS CURRENT EVENTS
 """
@@ -67,11 +67,26 @@ def readCurrentEvents(filepath):
         current_events = json.load(f)
     return current_events
 
-
 """
 DELETE OUTDATED EVENT FILES
 """
-def delOldEvents(folder):
+def delOldCurrentBattles():
+    currentEventsId = []
+    currentEvents = readCurrentEvents("todo")
+    for event in currentEvents:
+        currentEventsId.append(event["event"]["id"])
+
+    for (dirpath, dirnames, filenames) in os.walk(currentBattlePath):
+        for filename in filenames:
+            fn = filename.split(".")
+            oldEventId = int(fn[0])
+            if oldEventId not in currentEventsId:
+                os.remove(currentBattlePath+"/"+str(oldEventId)+".json")
+
+"""
+ROTATE OUTDATED EVENT FILES
+"""
+def rotateEvents(folder, maxBattlesPerEvent):
     currentEventsId = []
     currentEvents = readCurrentEvents("todo")
     for event in currentEvents:
@@ -82,7 +97,16 @@ def delOldEvents(folder):
             fn = filename.split(".")
             oldEventId = int(fn[0])
             if oldEventId not in currentEventsId:
-                os.remove(dataPath+"/"+folder+"/"+str(oldEventId)+".json")
+                try:
+                    with open(f"{dataPath}/{folder}/{oldEventId}.json", 'r+') as f:
+                        print(f"{dataPath}/{folder}/{oldEventId}.json")
+                        data=json.load(f)
+                        if len(data)>maxBattlesPerEvent:
+                            json.dump(data[-maxBattlesPerEvent:], f,
+                                    indent=4)
+                except:
+                    print("NO EVENT FILE")
+                #os.remove(dataPath+"/"+folder+"/"+str(oldEventId)+".json")
 
 
 """
@@ -92,7 +116,6 @@ def readEventsStats(event, soloOrTeams):
     with open(dataPath+'/stats/'+str(event["event"]["id"])+'.json') as f:
         events_stats = json.load(f)
     return events_stats[soloOrTeams], events_stats["battlesNumber"]
-
 
 """
 MAKE REST API GET CALL TO RETRIEVE BRAWL STARS RANKINGS BASED ON COUNTRY LIST
@@ -109,7 +132,6 @@ def getRankings(token, countries_list, player_limit):
         print("Country:" + country + ", Response code: " +
               str(response.status_code))
     return ranks_list
-
 
 """
 MAKE REST API GET CALL TO RETRIEVE BRAWL STARS RANKINGS BASED ON COUNTRY LIST
@@ -130,7 +152,6 @@ def getBattlelogs(token, ranks_list):
         battlelogs_list[country] = battlelogs
     return battlelogs_list
 
-
 """
 MAKE REST API GET CALL TO RETRIEVE BRAWL STARS RANKINGS BASED ON COUNTRY LIST - THREAD
 """
@@ -147,11 +168,8 @@ def getBattlelogsApiCalls(country, ranks_list, battlelogs, token):
         for battle in battlelog["items"]:
             # add the tag of the corresponding player in order to handle showdown
             battle["playerTag"] = tag
-
         battlelogs[tag] = battlelog
-        #print("Country:" + country + ", Tag: "+ tag + ", Response code: " + str(response.status_code))
     return battlelogs
-
 
 """
 RETURN SORTED WIN AND LOSE TEAM BASED ON BATTLE
@@ -187,7 +205,6 @@ def extractTeamBattles(battle):
     winTeam = sorted(winTeam)
     loseTeam = sorted(loseTeam)
     return winTeam, loseTeam
-
 
 """
 RETURN SORTED WIN AND LOSE BRAWLER BASED ON BATTLE
@@ -230,27 +247,6 @@ def extractSoloBattles(battle):
     loseTeam = sorted(loseTeam)
     return winTeam, loseTeam
 
-
-"""
-"""
-def computeBestBrawlers(mode, map, startTime):
-    mode = "gemGrab"
-    map = "Four Squared"
-    startTime = "20212212"
-
-    # READ BATTLES
-    with open(dataPath+path_separator+'battles'+path_separator+mode+path_separator+map+path_separator+startTime+"_"+mode+"_"+map+".json", 'r') as f:
-        battles_mode_map = json.load(f)
-    for battle in battles_mode_map:
-        winTeam, loseTeam = extractTeamBattles(battle)
-
-
-def unique_counter(filesets):
-    for i in filesets:
-        i['count'] = sum([1 for j in filesets if j['num'] == i['num']])
-    return {k['num']: k for k in filesets}.values()
-
-
 """
 REMOVE SAME TEAM IN A LIST FOR THE STATS
 """
@@ -261,15 +257,13 @@ def remove_team_duplicate(team):
             team_no_dupplicate.append(elem)
     return team_no_dupplicate
 
-
 """
 COMPUTE AND STORE STATS
 """
 def storeBestTeam():
-    dataFolder = Path(dataPath+path_separator+"battles")
+    dataFolder = Path(currentBattlePath)
     dataFolder.mkdir(parents=True, exist_ok=True)
     currentEvent = readCurrentEvents("TODO")
-    i = 0
     for event in currentEvent:
         map = event["event"]["map"]
         mode = event["event"]["mode"]
@@ -277,7 +271,7 @@ def storeBestTeam():
         winTeams = []
         loseTeams = []
         try:
-            with open(dataPath+path_separator+"battles"+path_separator+str(event["event"]["id"])+".json", 'r') as f:
+            with open(currentBattlePath+path_separator+str(event["event"]["id"])+".json", 'r') as f:
                 battles_mode_map = json.load(f)
         except:
             print("NO DATA")
@@ -373,7 +367,6 @@ def storeBestTeam():
         with open(filename, 'w') as fp:
             json.dump(winTable, fp, indent=4)
 
-
 """
 LIST FILES IN A DIR
 """
@@ -382,40 +375,39 @@ def getListOfFiles(dirName):
         for file in files:
             print(os.path.join(root, file))
 
-
 """
 STORE BATTLES IN BATTLES DIR
 """
 def storeBattles(battlelogsList, limitNumberOfBattles, expectedModes, maxBattlesPerEvent):
-    files2save = {}
     battles={}
     go = False
     numberOfBattles = 0
     battleNotInEvent = 0
+    battleInEvent = 0
     total = 0
     listNumOfBattles = []
     newBattle = 0
+    duppBattle = 0
+    lenBattles={}
     alreadyStoredBattle = 0
     curentEvent = readCurrentEvents("TODO")
     currentEventId=[]
-    i=0
-
-    dataFolder = Path(dataPath+"/battles")
+    dataFolder = Path(currentBattlePath)
     dataFolder.mkdir(parents=True, exist_ok=True)
 
     for event in curentEvent:
         currentEventId.append(event["event"]["id"])
-        i+=1
 
     for eventId in currentEventId:
         try:
-            with open(f"{dataFolder}/{eventId}.json", 'r') as f:
+            with open(f"{currentBattlePath}/{eventId}.json", 'r') as f:
                 battles[eventId]=json.load(f)
+            lenBattles[eventId]=len(battles[eventId])
         except:
             battles[eventId]=[]
+            lenBattles[eventId]=0
 
     print(currentEventId)
-    
 
     for pays in battlelogsList:
         for players in battlelogsList[pays]:
@@ -437,27 +429,20 @@ def storeBattles(battlelogsList, limitNumberOfBattles, expectedModes, maxBattles
 
                         if go:
                             if b.eventId in currentEventId:
-                                fileName = str(b.eventId)+".json"
-                                mapFile = dataFolder/fileName
                                 battles[b.eventId].append(battle)
-
-                                files2save[mapFile] = [battles]
-                                newBattle = newBattle+1
-
+                                battleInEvent += 1
                             else:
-                                battleNotInEvent = battleNotInEvent+1
-                                    
+                                battleNotInEvent += 1
 
-            listNumOfBattles.append(numberOfBattles)
-
-    i = 0
     for eventId in currentEventId:
-        with open(f"{dataFolder}/{eventId}.json", 'w') as f:
-            files2saveNoDupp = remove_dupe_dicts(battles[eventId])
-            json.dump(files2saveNoDupp[-maxBattlesPerEvent:], f, indent=4)
-        i = i+1
-    return newBattle, alreadyStoredBattle, total
-
+        battlesNoDupp = remove_dupe_dicts(battles[eventId])
+        duppBattle = duppBattle + (len(battles[eventId])-len(battlesNoDupp))
+        newBattle=newBattle+(len(battlesNoDupp)-lenBattles[eventId])
+        #if len(battlesNoDupp) > maxBattlesPerEvent:
+            #battlesNoDupp[-maxBattlesPerEvent:]
+        with open(f"{currentBattlePath}/{eventId}.json", 'w') as f:
+            json.dump(battlesNoDupp, f, indent=4)
+    return newBattle, duppBattle, battleInEvent, total
 
 """
 REMOVE SAME DICTS IN A LIST OF DICTS
@@ -469,7 +454,6 @@ def remove_dupe_dicts(l):
     B = len(list_of_strings)
     return [json.loads(s) for s in list_of_strings]
 
-
 """
 CONVERT BRAWL STARS START/END STRING INTO DATETIME 
 """
@@ -480,10 +464,8 @@ def convertDateTimeFromString(string):
     hours = int(string[9:11])
     minutes = int(string[11:13])
     seconds = int(string[13:15])
-
     eventDateTime = datetime(year, month, day, hours, minutes, seconds)
     return eventDateTime
-
 
 """
 GET DATETIME FROM BRAWL STARS START/END STRING
@@ -505,7 +487,6 @@ def computeEventTime(event):
     progress = int(100.0*timePassed/eventDuration)
 
     return startDateTime, endDateTime, progress, remainTime
-
 
 """
 CONVERT TIME DELTA INTO HOURS MINUTES SECONDS

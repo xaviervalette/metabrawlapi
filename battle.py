@@ -67,7 +67,6 @@ class Battle:
             self.starBrawlerPower=battle['battle']['starPlayer']['brawler']["power"]
          else:
             self.noStarBrawlerPower=True
-
          
          self.starBrawlername=battle['battle']['starPlayer']['brawler']["name"]
          self.winTeam=self.get_team_of_star_player()
