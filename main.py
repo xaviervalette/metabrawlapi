@@ -18,6 +18,7 @@ player_limit = int(config['DEFAULT']['playerLimit'])
 limitNumberOfBattles = int(config['DEFAULT']['limitNumberOfBattles'])
 countries_list = json.loads(config['DEFAULT']['countryList'])
 expectedModes = json.loads(config['DEFAULT']['expectedModes'])
+maxBattlesPerEvent = json.loads(config['DEFAULT']['maxBattlesPerEvent'])
 logFileName = logPath+path_separator+"timeLog.txt"
 
 """
@@ -25,8 +26,6 @@ MAIN
 """
 start2 = time.time()
 getCurrentEvents(token)
-delOldEvents("battles")
-delOldEvents("stats")
 
 print("\n***getRankings***\n")
 ranks = getRankings(token, countries_list, player_limit)
@@ -39,7 +38,7 @@ callTime = end2 - start2
 print("\n***STORE BATTLES***\n")
 start3 = time.time()
 newBattle, interestingBattle, totalBattle = storeBattles(
-    battlelogs, limitNumberOfBattles, expectedModes)
+    battlelogs, limitNumberOfBattles, expectedModes, maxBattlesPerEvent)
 end3 = time.time()
 storeBattleTime = end3 - start3
 

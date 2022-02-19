@@ -386,8 +386,9 @@ def getListOfFiles(dirName):
 """
 STORE BATTLES IN BATTLES DIR
 """
-def storeBattles(battlelogsList, limitNumberOfBattles, expectedModes):
+def storeBattles(battlelogsList, limitNumberOfBattles, expectedModes, maxBattlesPerEvent):
     files2save = {}
+    battles={}
     go = False
     numberOfBattles = 0
     battleNotInEvent = 0
@@ -395,99 +396,70 @@ def storeBattles(battlelogsList, limitNumberOfBattles, expectedModes):
     listNumOfBattles = []
     newBattle = 0
     alreadyStoredBattle = 0
-    notInterestingBattle = 0
-    friendlyBattles = 0
-    battleWithNoDuration = 0
     curentEvent = readCurrentEvents("TODO")
+    currentEventId=[]
+    i=0
+
+    for event in curentEvent:
+        currentEventId.append(event["event"]["id"])
+        i+=1
+
+    for eventId in currentEventId:
+        try:
+            with open(f"{eventId}.json", 'r') as f:
+                battles[eventId]=json.load(f)
+        except:
+            battles[eventId]=[]
+
+    print(currentEventId)
+
+
     dataFolder = Path(dataPath+"/battles")
     dataFolder.mkdir(parents=True, exist_ok=True)
+    
 
     for pays in battlelogsList:
         for players in battlelogsList[pays]:
             if "items" in battlelogsList[pays][players]:
                 numberOfBattles = 0
-                for battles in battlelogsList[pays][players]["items"]:
+                for battle in battlelogsList[pays][players]["items"]:
                     if numberOfBattles < limitNumberOfBattles:
                         numberOfBattles = numberOfBattles+1
                         total = total+1
-                        b = Battle(battles)
+                        b = Battle(battle)
+                        
                         go = False
-
                         if b.mode in expectedModes:
                             if not b.noDuration and not b.noResult and not b.noStarPlayer and not b.noType and not b.noTeams and b.typee != "friendly":
                                 go = True
-
                         elif b.mode == "soloShowdown" or b.mode == "duoShowdown":
                             if not b.noType and b.typee != "friendly":
                                 go = True
 
                         if go:
-                            startTime = None
-                            mode = b.mode
-                            mapEvent = b.mapEvent
-                            for event in curentEvent:
-                                battleMap = event["event"]["map"]
-                                battleMode = event["event"]["mode"]
-                                if battleMap == mapEvent and battleMode == mode:
-                                    startTime = event["startTime"]
-                                    break
-                            if startTime is not None:
-                                startTime = startTime.split(".")[0]
-                                fileName = str(event["event"]["id"])+".json"
+                            if b.eventId in currentEventId:
+                                fileName = str(b.eventId)+".json"
                                 mapFile = dataFolder/fileName
-                                if mapFile.is_file() or mapFile in files2save:
-                                    if mapFile not in files2save:
-                                        data = json.load(open(mapFile))
-                                        # convert data to list if not
-                                        if type(data) is dict:
-                                            data = [data]
-                                        files2save[mapFile] = data
-                                    alreadyExist = False
 
-                                    if not alreadyExist:
-                                        # append new item to data lit
-                                        files2save[mapFile].append(battles)
-                                        newBattle = newBattle+1
+                                if len(battles[b.eventId]) > maxBattlesPerEvent:
+                                    battles[b.eventId].append(battle)
+                                    n = -maxBattlesPerEvent
+                                    battles[b.eventId] = battles[b.eventId][n:]
 
-                                    else:
-                                        alreadyStoredBattle = alreadyStoredBattle+1
-                                else:
-                                    files2save[mapFile] = [battles]
-                                    newBattle = newBattle+1
+                                files2save[mapFile] = [battles]
+                                newBattle = newBattle+1
 
                             else:
                                 battleNotInEvent = battleNotInEvent+1
-                        else:
-                            if not b.noType and b.typee == "friendly":
-                                friendlyBattles = friendlyBattles+1
-                            elif b.noDuration:
-                                battleWithNoDuration = battleWithNoDuration+1
-                            else:
-                                notInterestingBattle = notInterestingBattle+1
+                                    
 
             listNumOfBattles.append(numberOfBattles)
-    print("--------------------------------------------------------")
-    total = notInterestingBattle+alreadyStoredBattle+newBattle + \
-        battleNotInEvent+friendlyBattles+battleWithNoDuration
-    print("New battles stored: " + str(newBattle)+"/"+str(total))
-    print("Battle not in curent event: " +
-          str(battleNotInEvent)+"/"+str(total))
-    print("Already stored battles: " + str(alreadyStoredBattle)+"/"+str(total))
-    print("Not interesting battles: "+str(notInterestingBattle)+"/"+str(total))
-    print("Friendly battles: ", str(friendlyBattles)+"/"+str(total))
-    print("Battle with no duration: ",  str(
-        battleWithNoDuration)+"/"+str(total))
-    print("--------------------------------------------------------")
-    print("total: ", total)
-    print("min number of battle per battle log: ", min(listNumOfBattles))
-    print("max number of battle per battle log: ", max(listNumOfBattles))
-    print("mean number of battle per battle log: ",
-          sum(listNumOfBattles)/len(listNumOfBattles))
+
     i = 0
-    for files in files2save:
-        with open(files, 'w') as outfile:
-            files2saveNoDupp = remove_dupe_dicts(files2save[files])
-            json.dump(files2saveNoDupp, outfile, indent=4)
+    for eventId in currentEventId:
+        with open(f"{eventId}.json", 'w') as f:
+            files2saveNoDupp = remove_dupe_dicts(battles[eventId])
+            json.dump(files2saveNoDupp, f, indent=4)
         i = i+1
     return newBattle, alreadyStoredBattle, total
 

@@ -47,7 +47,7 @@ class Battle:
 
       self.battleTime=battle['battleTime']
       self.mapEvent=battle['event']['map']
-      self.idEvent=battle['event']['id']
+      self.eventId=battle['event']['id']
       if 'mode' in battle['event']:
          self.modEvent=battle['event']['mode']
       else:

@@ -1,0 +1,919 @@
+[
+    {
+        "battle": {
+            "duration": 120,
+            "mode": "bounty",
+            "result": "victory",
+            "starPlayer": {
+                "brawler": {
+                    "id": 16000011,
+                    "name": "MORTIS",
+                    "power": 10,
+                    "trophies": 849
+                },
+                "name": "BGP|Extrigotin",
+                "tag": "#2VG8U2900"
+            },
+            "teams": [
+                [
+                    {
+                        "brawler": {
+                            "id": 16000048,
+                            "name": "GROM",
+                            "power": 9,
+                            "trophies": 779
+                        },
+                        "name": "Julien",
+                        "tag": "#PCY8UCV2"
+                    },
+                    {
+                        "brawler": {
+                            "id": 16000022,
+                            "name": "TICK",
+                            "power": 9,
+                            "trophies": 773
+                        },
+                        "name": "G\ud835\ude91\ud835\ude98\ud835\ude9e\ud835\ude95\u2766",
+                        "tag": "#8PLGURVR"
+                    },
+                    {
+                        "brawler": {
+                            "id": 16000051,
+                            "name": "ASH",
+                            "power": 9,
+                            "trophies": 821
+                        },
+                        "name": "\u26e9|Josia64\ud83c\udf8b",
+                        "tag": "#QUQ9PVLV"
+                    }
+                ],
+                [
+                    {
+                        "brawler": {
+                            "id": 16000011,
+                            "name": "MORTIS",
+                            "power": 10,
+                            "trophies": 849
+                        },
+                        "name": "BGP|Extrigotin",
+                        "tag": "#2VG8U2900"
+                    },
+                    {
+                        "brawler": {
+                            "id": 16000042,
+                            "name": "BYRON",
+                            "power": 10,
+                            "trophies": 855
+                        },
+                        "name": "Narc\u043e",
+                        "tag": "#8PLVYU92"
+                    },
+                    {
+                        "brawler": {
+                            "id": 16000004,
+                            "name": "RICO",
+                            "power": 9,
+                            "trophies": 834
+                        },
+                        "name": "\u0432\u0455e|ko\ud83c\udf38",
+                        "tag": "#8J08U8Y"
+                    }
+                ]
+            ],
+            "trophyChange": 7,
+            "type": "ranked"
+        },
+        "battleTime": "20220219T102228.000Z",
+        "event": {
+            "id": 15000082,
+            "map": "Layer Cake",
+            "mode": "bounty"
+        },
+        "playerTag": "#8PLVYU92"
+    },
+    {
+        "battle": {
+            "duration": 120,
+            "mode": "bounty",
+            "result": "victory",
+            "starPlayer": {
+                "brawler": {
+                    "id": 16000004,
+                    "name": "RICO",
+                    "power": 11,
+                    "trophies": 15
+                },
+                "name": "\ud83e\udd99\ud83e\udd99\ud83e\udd99",
+                "tag": "#PVUVCRV2"
+            },
+            "teams": [
+                [
+                    {
+                        "brawler": {
+                            "id": 16000023,
+                            "name": "LEON",
+                            "power": 9,
+                            "trophies": 15
+                        },
+                        "name": "BetterAlone :)",
+                        "tag": "#V0Y2Y2UV"
+                    },
+                    {
+                        "brawler": {
+                            "id": 16000022,
+                            "name": "TICK",
+                            "power": 10,
+                            "trophies": 15
+                        },
+                        "name": "[B] Poeta^\u2022^",
+                        "tag": "#8Y0GL8CYL"
+                    },
+                    {
+                        "brawler": {
+                            "id": 16000015,
+                            "name": "PIPER",
+                            "power": 9,
+                            "trophies": 14
+                        },
+                        "name": "NS | Johany\ud83d\udc25",
+                        "tag": "#PRVR282"
+                    }
+                ],
+                [
+                    {
+                        "brawler": {
+                            "id": 16000038,
+                            "name": "SURGE",
+                            "power": 11,
+                            "trophies": 15
+                        },
+                        "name": "Ronald MCDONALD",
+                        "tag": "#Y2GJYPGGQ"
+                    },
+                    {
+                        "brawler": {
+                            "id": 16000042,
+                            "name": "BYRON",
+                            "power": 11,
+                            "trophies": 15
+                        },
+                        "name": "azian",
+                        "tag": "#9PYVQ8GQJ"
+                    },
+                    {
+                        "brawler": {
+                            "id": 16000004,
+                            "name": "RICO",
+                            "power": 11,
+                            "trophies": 15
+                        },
+                        "name": "\ud83e\udd99\ud83e\udd99\ud83e\udd99",
+                        "tag": "#PVUVCRV2"
+                    }
+                ]
+            ],
+            "type": "soloRanked"
+        },
+        "battleTime": "20220219T031636.000Z",
+        "event": {
+            "id": 15000082,
+            "map": "Layer Cake",
+            "mode": "bounty"
+        },
+        "playerTag": "#Y2GJYPGGQ"
+    },
+    {
+        "battle": {
+            "duration": 120,
+            "mode": "bounty",
+            "result": "victory",
+            "starPlayer": {
+                "brawler": {
+                    "id": 16000037,
+                    "name": "SPROUT",
+                    "power": -1,
+                    "trophies": -1
+                },
+                "name": "Response\ud83d\udc19",
+                "tag": "#RQ0QL"
+            },
+            "teams": [
+                [
+                    {
+                        "brawler": {
+                            "id": 16000044,
+                            "name": "COLONEL RUFFS",
+                            "power": -1,
+                            "trophies": -1
+                        },
+                        "name": "CoupDeAce",
+                        "tag": "#J08YLC9J"
+                    },
+                    {
+                        "brawler": {
+                            "id": 16000018,
+                            "name": "DARRYL",
+                            "power": -1,
+                            "trophies": -1
+                        },
+                        "name": "Sergeant Clash",
+                        "tag": "#8CQURRJJY"
+                    },
+                    {
+                        "brawler": {
+                            "id": 16000037,
+                            "name": "SPROUT",
+                            "power": -1,
+                            "trophies": -1
+                        },
+                        "name": "Response\ud83d\udc19",
+                        "tag": "#RQ0QL"
+                    }
+                ],
+                [
+                    {
+                        "brawler": {
+                            "id": 16000048,
+                            "name": "GROM",
+                            "power": -1,
+                            "trophies": -1
+                        },
+                        "name": "segton slay",
+                        "tag": "#9YPGP2C9"
+                    },
+                    {
+                        "brawler": {
+                            "id": 16000054,
+                            "name": "FANG",
+                            "power": -1,
+                            "trophies": -1
+                        },
+                        "name": "Igneous \u222c",
+                        "tag": "#U2V2LLQQ"
+                    },
+                    {
+                        "brawler": {
+                            "id": 16000031,
+                            "name": "MR. P",
+                            "power": -1,
+                            "trophies": -1
+                        },
+                        "name": "Xellence~\u2730",
+                        "tag": "#V8J00VYQ"
+                    }
+                ]
+            ],
+            "type": "tournament"
+        },
+        "battleTime": "20220219T101008.000Z",
+        "event": {
+            "id": 15000082,
+            "map": "Layer Cake",
+            "mode": "bounty"
+        },
+        "playerTag": "#8CQURRJJY"
+    },
+    {
+        "battle": {
+            "duration": 120,
+            "mode": "bounty",
+            "result": "defeat",
+            "starPlayer": {
+                "brawler": {
+                    "id": 16000011,
+                    "name": "MORTIS",
+                    "power": 11,
+                    "trophies": 862
+                },
+                "name": "LAHIB BOSS",
+                "tag": "#P2Y2YUUPU"
+            },
+            "teams": [
+                [
+                    {
+                        "brawler": {
+                            "id": 16000011,
+                            "name": "MORTIS",
+                            "power": 10,
+                            "trophies": 1017
+                        },
+                        "name": "TQ | RaaFa",
+                        "tag": "#90QUR2QY"
+                    },
+                    {
+                        "brawler": {
+                            "id": 16000025,
+                            "name": "CARL",
+                            "power": 9,
+                            "trophies": 825
+                        },
+                        "name": "BakS|Leroyalle",
+                        "tag": "#JLCPLG9Q"
+                    },
+                    {
+                        "brawler": {
+                            "id": 16000015,
+                            "name": "PIPER",
+                            "power": 11,
+                            "trophies": 904
+                        },
+                        "name": "BakS|Selavi17",
+                        "tag": "#YY9Q9JG98"
+                    }
+                ],
+                [
+                    {
+                        "brawler": {
+                            "id": 16000014,
+                            "name": "BO",
+                            "power": 10,
+                            "trophies": 852
+                        },
+                        "name": "\ud83e\udddb\ud83c\udffb|Tripple\ud83e\udd87",
+                        "tag": "#RVL0UJVL"
+                    },
+                    {
+                        "brawler": {
+                            "id": 16000017,
+                            "name": "TARA",
+                            "power": 10,
+                            "trophies": 929
+                        },
+                        "name": "2sick4you\u2764\ufe0f\u200d\ud83d\udd25",
+                        "tag": "#UYLLPVYU"
+                    },
+                    {
+                        "brawler": {
+                            "id": 16000011,
+                            "name": "MORTIS",
+                            "power": 11,
+                            "trophies": 862
+                        },
+                        "name": "LAHIB BOSS",
+                        "tag": "#P2Y2YUUPU"
+                    }
+                ]
+            ],
+            "trophyChange": -11,
+            "type": "ranked"
+        },
+        "battleTime": "20220219T100948.000Z",
+        "event": {
+            "id": 15000082,
+            "map": "Layer Cake",
+            "mode": "bounty"
+        },
+        "playerTag": "#90QUR2QY"
+    },
+    {
+        "battle": {
+            "duration": 120,
+            "mode": "bounty",
+            "result": "victory",
+            "starPlayer": {
+                "brawler": {
+                    "id": 16000023,
+                    "name": "LEON",
+                    "power": 10,
+                    "trophies": 952
+                },
+                "name": "BakS|Leroyalle",
+                "tag": "#JLCPLG9Q"
+            },
+            "teams": [
+                [
+                    {
+                        "brawler": {
+                            "id": 16000015,
+                            "name": "PIPER",
+                            "power": 11,
+                            "trophies": 897
+                        },
+                        "name": "BakS|Selavi17",
+                        "tag": "#YY9Q9JG98"
+                    },
+                    {
+                        "brawler": {
+                            "id": 16000011,
+                            "name": "MORTIS",
+                            "power": 10,
+                            "trophies": 1012
+                        },
+                        "name": "TQ | RaaFa",
+                        "tag": "#90QUR2QY"
+                    },
+                    {
+                        "brawler": {
+                            "id": 16000023,
+                            "name": "LEON",
+                            "power": 10,
+                            "trophies": 952
+                        },
+                        "name": "BakS|Leroyalle",
+                        "tag": "#JLCPLG9Q"
+                    }
+                ],
+                [
+                    {
+                        "brawler": {
+                            "id": 16000044,
+                            "name": "COLONEL RUFFS",
+                            "power": 9,
+                            "trophies": 954
+                        },
+                        "name": "\u03df\u0e04\u2113\u0454\u2078\u00b2\ud83c\udf49",
+                        "tag": "#V22J8YRU"
+                    },
+                    {
+                        "brawler": {
+                            "id": 16000024,
+                            "name": "ROSA",
+                            "power": 11,
+                            "trophies": 810
+                        },
+                        "name": "\u300c\u026a\u0280\u0365\u1d1c\u0299\u0363\u1d22\u036bx\ud83d\udd4a\u2076\u2079\u300d",
+                        "tag": "#2J0YLCRGY"
+                    },
+                    {
+                        "brawler": {
+                            "id": 16000048,
+                            "name": "GROM",
+                            "power": 9,
+                            "trophies": 911
+                        },
+                        "name": "\ud83d\udda4\u261b\u03b1\u2113\u0454\u03c7\u03b1\u0438\u2202\u0454\u044f\u261a\ud83d\udda4",
+                        "tag": "#8LGLG02GV"
+                    }
+                ]
+            ],
+            "trophyChange": 5,
+            "type": "ranked"
+        },
+        "battleTime": "20220219T100636.000Z",
+        "event": {
+            "id": 15000082,
+            "map": "Layer Cake",
+            "mode": "bounty"
+        },
+        "playerTag": "#90QUR2QY"
+    },
+    {
+        "battle": {
+            "duration": 120,
+            "mode": "bounty",
+            "result": "victory",
+            "starPlayer": {
+                "brawler": {
+                    "id": 16000054,
+                    "name": "FANG",
+                    "power": 9,
+                    "trophies": 12
+                },
+                "name": "idan",
+                "tag": "#822YPL0YC"
+            },
+            "teams": [
+                [
+                    {
+                        "brawler": {
+                            "id": 16000023,
+                            "name": "LEON",
+                            "power": 11,
+                            "trophies": 12
+                        },
+                        "name": "javiab",
+                        "tag": "#9PVGCQ8R8"
+                    },
+                    {
+                        "brawler": {
+                            "id": 16000003,
+                            "name": "BROCK",
+                            "power": 9,
+                            "trophies": 13
+                        },
+                        "name": "\uff92\u00d8 | \u20b8\u0246\u20a6\ud800\udf04\u20b8",
+                        "tag": "#YPLJGJG00"
+                    },
+                    {
+                        "brawler": {
+                            "id": 16000011,
+                            "name": "MORTIS",
+                            "power": 11,
+                            "trophies": 12
+                        },
+                        "name": "Max",
+                        "tag": "#2PP220R9G"
+                    }
+                ],
+                [
+                    {
+                        "brawler": {
+                            "id": 16000054,
+                            "name": "FANG",
+                            "power": 9,
+                            "trophies": 12
+                        },
+                        "name": "idan",
+                        "tag": "#822YPL0YC"
+                    },
+                    {
+                        "brawler": {
+                            "id": 16000017,
+                            "name": "TARA",
+                            "power": 9,
+                            "trophies": 12
+                        },
+                        "name": "Ibrahim ajar",
+                        "tag": "#G20L9JCY"
+                    },
+                    {
+                        "brawler": {
+                            "id": 16000022,
+                            "name": "TICK",
+                            "power": 10,
+                            "trophies": 11
+                        },
+                        "name": "\ud83e\udd40NoMercy YT\ud83c\udf20",
+                        "tag": "#822UCG80"
+                    }
+                ]
+            ],
+            "type": "soloRanked"
+        },
+        "battleTime": "20220216T172523.000Z",
+        "event": {
+            "id": 15000082,
+            "map": "Layer Cake",
+            "mode": "bounty"
+        },
+        "playerTag": "#822UCG80"
+    },
+    {
+        "battle": {
+            "duration": 120,
+            "mode": "bounty",
+            "result": "victory",
+            "starPlayer": {
+                "brawler": {
+                    "id": 16000015,
+                    "name": "PIPER",
+                    "power": 11,
+                    "trophies": 19
+                },
+                "name": "VLC | Ghoul13",
+                "tag": "#8Q09J2"
+            },
+            "teams": [
+                [
+                    {
+                        "brawler": {
+                            "id": 16000015,
+                            "name": "PIPER",
+                            "power": 11,
+                            "trophies": 19
+                        },
+                        "name": "VLC | Ghoul13",
+                        "tag": "#8Q09J2"
+                    },
+                    {
+                        "brawler": {
+                            "id": 16000005,
+                            "name": "SPIKE",
+                            "power": 10,
+                            "trophies": 19
+                        },
+                        "name": "Raydioaktiv",
+                        "tag": "#82YUVVG"
+                    },
+                    {
+                        "brawler": {
+                            "id": 16000022,
+                            "name": "TICK",
+                            "power": 9,
+                            "trophies": 19
+                        },
+                        "name": "SEKHON SAN",
+                        "tag": "#PCJV8PCP2"
+                    }
+                ],
+                [
+                    {
+                        "brawler": {
+                            "id": 16000042,
+                            "name": "BYRON",
+                            "power": 9,
+                            "trophies": 17
+                        },
+                        "name": "CM|Clocksy",
+                        "tag": "#8U889VJJL"
+                    },
+                    {
+                        "brawler": {
+                            "id": 16000003,
+                            "name": "BROCK",
+                            "power": 9,
+                            "trophies": 17
+                        },
+                        "name": "electric karb9",
+                        "tag": "#8JV0Y89"
+                    },
+                    {
+                        "brawler": {
+                            "id": 16000023,
+                            "name": "LEON",
+                            "power": 11,
+                            "trophies": 17
+                        },
+                        "name": "flicky",
+                        "tag": "#RRPCG2JR"
+                    }
+                ]
+            ],
+            "trophyChange": 9,
+            "type": "teamRanked"
+        },
+        "battleTime": "20220219T081054.000Z",
+        "event": {
+            "id": 15000082,
+            "map": "Layer Cake",
+            "mode": "bounty"
+        },
+        "playerTag": "#8Q09J2"
+    },
+    {
+        "battle": {
+            "duration": 120,
+            "mode": "bounty",
+            "result": "victory",
+            "starPlayer": {
+                "brawler": {
+                    "id": 16000011,
+                    "name": "MORTIS",
+                    "power": 10,
+                    "trophies": 842
+                },
+                "name": "BGP|Extrigotin",
+                "tag": "#2VG8U2900"
+            },
+            "teams": [
+                [
+                    {
+                        "brawler": {
+                            "id": 16000011,
+                            "name": "MORTIS",
+                            "power": 10,
+                            "trophies": 842
+                        },
+                        "name": "BGP|Extrigotin",
+                        "tag": "#2VG8U2900"
+                    },
+                    {
+                        "brawler": {
+                            "id": 16000042,
+                            "name": "BYRON",
+                            "power": 10,
+                            "trophies": 848
+                        },
+                        "name": "Narc\u043e",
+                        "tag": "#8PLVYU92"
+                    },
+                    {
+                        "brawler": {
+                            "id": 16000004,
+                            "name": "RICO",
+                            "power": 9,
+                            "trophies": 827
+                        },
+                        "name": "\u0432\u0455e|ko\ud83c\udf38",
+                        "tag": "#8J08U8Y"
+                    }
+                ],
+                [
+                    {
+                        "brawler": {
+                            "id": 16000046,
+                            "name": "BELLE",
+                            "power": 11,
+                            "trophies": 821
+                        },
+                        "name": "EP | Zizik",
+                        "tag": "#98YJR0J2"
+                    },
+                    {
+                        "brawler": {
+                            "id": 16000023,
+                            "name": "LEON",
+                            "power": 10,
+                            "trophies": 875
+                        },
+                        "name": "\u207f\u1d50\u1d43\u300eWi\u0365lc\u0363o\u036b\ud83c\udfad\u300f",
+                        "tag": "#9PQRLRPRG"
+                    },
+                    {
+                        "brawler": {
+                            "id": 16000022,
+                            "name": "TICK",
+                            "power": 9,
+                            "trophies": 832
+                        },
+                        "name": "Diony",
+                        "tag": "#R9Y988C"
+                    }
+                ]
+            ],
+            "trophyChange": 7,
+            "type": "ranked"
+        },
+        "battleTime": "20220219T102006.000Z",
+        "event": {
+            "id": 15000082,
+            "map": "Layer Cake",
+            "mode": "bounty"
+        },
+        "playerTag": "#8PLVYU92"
+    },
+    {
+        "battle": {
+            "duration": 120,
+            "mode": "bounty",
+            "result": "victory",
+            "starPlayer": {
+                "brawler": {
+                    "id": 16000043,
+                    "name": "EDGAR",
+                    "power": 10,
+                    "trophies": 713
+                },
+                "name": "Eqwaak 2.0",
+                "tag": "#YQ8CCLGYR"
+            },
+            "teams": [
+                [
+                    {
+                        "brawler": {
+                            "id": 16000011,
+                            "name": "MORTIS",
+                            "power": 11,
+                            "trophies": 731
+                        },
+                        "name": "\u2694Mortis\u1d33\u1d52\u1d48\u2694\ufe0f",
+                        "tag": "#QL89GRGQ"
+                    },
+                    {
+                        "brawler": {
+                            "id": 16000022,
+                            "name": "TICK",
+                            "power": 11,
+                            "trophies": 740
+                        },
+                        "name": "\u0412\u0438\u043a\u0442\u043e\u0440",
+                        "tag": "#8RVJU2YPR"
+                    },
+                    {
+                        "brawler": {
+                            "id": 16000043,
+                            "name": "EDGAR",
+                            "power": 9,
+                            "trophies": 725
+                        },
+                        "name": "Master",
+                        "tag": "#P0RQRQ02Q"
+                    }
+                ],
+                [
+                    {
+                        "brawler": {
+                            "id": 16000043,
+                            "name": "EDGAR",
+                            "power": 10,
+                            "trophies": 713
+                        },
+                        "name": "Eqwaak 2.0",
+                        "tag": "#YQ8CCLGYR"
+                    },
+                    {
+                        "brawler": {
+                            "id": 16000054,
+                            "name": "FANG",
+                            "power": 9,
+                            "trophies": 732
+                        },
+                        "name": "lel2k",
+                        "tag": "#9C8L2R2P"
+                    },
+                    {
+                        "brawler": {
+                            "id": 16000011,
+                            "name": "MORTIS",
+                            "power": 10,
+                            "trophies": 767
+                        },
+                        "name": "AF/Teo\ud83c\ude34",
+                        "tag": "#8PYL29LUJ"
+                    }
+                ]
+            ],
+            "trophyChange": 8,
+            "type": "ranked"
+        },
+        "battleTime": "20220219T100449.000Z",
+        "event": {
+            "id": 15000082,
+            "map": "Layer Cake",
+            "mode": "bounty"
+        },
+        "playerTag": "#8PYL29LUJ"
+    },
+    {
+        "battle": {
+            "duration": 120,
+            "mode": "bounty",
+            "result": "victory",
+            "starPlayer": {
+                "brawler": {
+                    "id": 16000015,
+                    "name": "PIPER",
+                    "power": 11,
+                    "trophies": 782
+                },
+                "name": "[Pph] Jessie",
+                "tag": "#LJQ90U0R"
+            },
+            "teams": [
+                [
+                    {
+                        "brawler": {
+                            "id": 16000013,
+                            "name": "POCO",
+                            "power": 9,
+                            "trophies": 617
+                        },
+                        "name": "Mortis\u30c4\u1d37\u2071\u02e1\u02e1\u1d67\u2092\u1d64",
+                        "tag": "#2J0CQ9J8U"
+                    },
+                    {
+                        "brawler": {
+                            "id": 16000049,
+                            "name": "BUZZ",
+                            "power": 10,
+                            "trophies": 832
+                        },
+                        "name": "LNR|Fleischi\u2766",
+                        "tag": "#2CJU9L8GG"
+                    },
+                    {
+                        "brawler": {
+                            "id": 16000002,
+                            "name": "BULL",
+                            "power": 10,
+                            "trophies": 813
+                        },
+                        "name": "N\u026a\u1d04\u1d0b\ud83e\udd0d\ud83d\udc3b",
+                        "tag": "#2RUJQ98U8"
+                    }
+                ],
+                [
+                    {
+                        "brawler": {
+                            "id": 16000015,
+                            "name": "PIPER",
+                            "power": 11,
+                            "trophies": 782
+                        },
+                        "name": "[Pph] Jessie",
+                        "tag": "#LJQ90U0R"
+                    },
+                    {
+                        "brawler": {
+                            "id": 16000011,
+                            "name": "MORTIS",
+                            "power": 10,
+                            "trophies": 775
+                        },
+                        "name": "AF/Teo\ud83c\ude34",
+                        "tag": "#8PYL29LUJ"
+                    },
+                    {
+                        "brawler": {
+                            "id": 16000022,
+                            "name": "TICK",
+                            "power": 11,
+                            "trophies": 797
+                        },
+                        "name": "MNE|SARAC",
+                        "tag": "#2200GQ8GG"
+                    }
+                ]
+            ],
+            "trophyChange": 8,
+            "type": "ranked"
+        },
+        "battleTime": "20220219T100714.000Z",
+        "event": {
+            "id": 15000082,
+            "map": "Layer Cake",
+            "mode": "bounty"
+        },
+        "playerTag": "#8PYL29LUJ"
+    }
+]
