@@ -400,22 +400,21 @@ def storeBattles(battlelogsList, limitNumberOfBattles, expectedModes, maxBattles
     currentEventId=[]
     i=0
 
+    dataFolder = Path(dataPath+"/battles")
+    dataFolder.mkdir(parents=True, exist_ok=True)
+
     for event in curentEvent:
         currentEventId.append(event["event"]["id"])
         i+=1
 
     for eventId in currentEventId:
         try:
-            with open(f"{eventId}.json", 'r') as f:
+            with open(f"{dataFolder}/{eventId}.json", 'r') as f:
                 battles[eventId]=json.load(f)
         except:
             battles[eventId]=[]
 
     print(currentEventId)
-
-
-    dataFolder = Path(dataPath+"/battles")
-    dataFolder.mkdir(parents=True, exist_ok=True)
     
 
     for pays in battlelogsList:
@@ -440,11 +439,7 @@ def storeBattles(battlelogsList, limitNumberOfBattles, expectedModes, maxBattles
                             if b.eventId in currentEventId:
                                 fileName = str(b.eventId)+".json"
                                 mapFile = dataFolder/fileName
-
-                                if len(battles[b.eventId]) > maxBattlesPerEvent:
-                                    battles[b.eventId].append(battle)
-                                    n = -maxBattlesPerEvent
-                                    battles[b.eventId] = battles[b.eventId][n:]
+                                battles[b.eventId].append(battle)
 
                                 files2save[mapFile] = [battles]
                                 newBattle = newBattle+1
@@ -457,9 +452,9 @@ def storeBattles(battlelogsList, limitNumberOfBattles, expectedModes, maxBattles
 
     i = 0
     for eventId in currentEventId:
-        with open(f"{eventId}.json", 'w') as f:
+        with open(f"{dataFolder}/{eventId}.json", 'w') as f:
             files2saveNoDupp = remove_dupe_dicts(battles[eventId])
-            json.dump(files2saveNoDupp, f, indent=4)
+            json.dump(files2saveNoDupp[-maxBattlesPerEvent:], f, indent=4)
         i = i+1
     return newBattle, alreadyStoredBattle, total
 
