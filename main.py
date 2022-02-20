@@ -26,8 +26,8 @@ MAIN
 """
 start2 = time.time()
 getCurrentEvents(token)
-delOldCurrentBattles()
-#rotateEvents("battles", maxBattlesPerEvent)
+#delOldCurrentBattles()
+rotateEvents(maxBattlesPerEvent)
 
 print("\n***getRankings***\n")
 ranks = getRankings(token, countries_list, player_limit)

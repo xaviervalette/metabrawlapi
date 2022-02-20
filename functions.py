@@ -86,28 +86,38 @@ def delOldCurrentBattles():
 """
 ROTATE OUTDATED EVENT FILES
 """
-def rotateEvents(folder, maxBattlesPerEvent):
+def rotateEvents(maxBattlesPerEvent):
     currentEventsId = []
     currentEvents = readCurrentEvents("todo")
     for event in currentEvents:
         currentEventsId.append(event["event"]["id"])
 
-    for (dirpath, dirnames, filenames) in os.walk(dataPath+path_separator+folder+path_separator):
+    for (dirpath, dirnames, filenames) in os.walk(currentBattlePath):
         for filename in filenames:
             fn = filename.split(".")
             oldEventId = int(fn[0])
             if oldEventId not in currentEventsId:
                 try:
-                    with open(f"{dataPath}/{folder}/{oldEventId}.json", 'r+') as f:
-                        print(f"{dataPath}/{folder}/{oldEventId}.json")
+                    with open(currentBattlePath+"/"+str(oldEventId)+".json", 'r+') as f:
+                        print(currentBattlePath+"/"+str(oldEventId)+".json")
                         data=json.load(f)
-                        if len(data)>maxBattlesPerEvent:
-                            json.dump(data[-maxBattlesPerEvent:], f,
-                                    indent=4)
+                    
+                    if len(data)>maxBattlesPerEvent:
+                        data=data[-maxBattlesPerEvent:]
+
+                    with open(allBattlePath+"/"+str(oldEventId)+".json", 'w') as f:
+                        json.dump(data[-maxBattlesPerEvent:], f, indent=4)
                 except:
                     print("NO EVENT FILE")
-                #os.remove(dataPath+"/"+folder+"/"+str(oldEventId)+".json")
 
+                if len(data)>maxBattlesPerEvent:
+                        data=data[-maxBattlesPerEvent:]
+                with open(allBattlePath+"/"+str(oldEventId)+".json", 'w') as f:
+                    json.dump(data[-maxBattlesPerEvent:], f, indent=4)
+                try:
+                    os.remove(currentBattlePath+"/"+str(oldEventId)+".json")
+                except:
+                    print("NO FILE TO REMOVE")
 
 """
 READ AND RETURN BRAWL STARS EVENTS STATS
