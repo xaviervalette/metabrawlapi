@@ -9,7 +9,6 @@ import threading
 from concurrent.futures import ThreadPoolExecutor, as_completed
 import platform
 from datetime import datetime, timezone
-from dotenv import load_dotenv
 
 """
 SETTING GLOBAL VARIABLES
@@ -19,20 +18,10 @@ if(platform.system() == "Windows"):
 else:
     path_separator = "/"
 
-load_dotenv()
-
-dataPath = os.environ["BRAWL_COACH_DATAPATH"]
-backPath = os.environ["BRAWL_COACH_BACKPATH"]
-logPath = os.environ["BRAWL_COACH_LOGPATH"]
-token = os.environ["BRAWL_COACH_TOKEN"]
-baseUrl = os.environ["BRAWL_STARS_API_BASE_URL"]
-currentBattlePath = dataPath+"/battles/current"
-allBattlePath = dataPath+"/battles/all"
-
 """
 MAKE REST API GET CALL TO RETRIEVE BRAWL STARS SPECIFIC PLAYER STATS USING PLAYER TAG
 """
-def getPlayerStats(token, tag):
+def getPlayerStats(token, tag, baseUrl):
     headers = {'Authorization': 'Bearer '+token}
     data = {}
     urlTag = tag.replace("#", "%23")
@@ -44,85 +33,35 @@ def getPlayerStats(token, tag):
 """
 MAKE REST API GET CALL TO RETRIEVE BRAWL STARS CURRENT EVENTS
 """
-def getCurrentEvents(token):
+def getCurrentEvents(token, baseUrl, dataPath):
 
     headers = {'Authorization': 'Bearer '+token}
     data = {}
     response = requests.request(
-        "GET", "https://api.brawlstars.com/v1/events/rotation", headers=headers, data=data)
+        "GET", baseUrl+"/events/rotation", headers=headers, data=data)
+    print(response.status_code)
     current_events = response.json()
     i = 0
     for event in current_events:
+        print(event)
         event["currentEventNumber"] = i
         i = i+1
     with open(dataPath+'/events/current_events.json', 'w') as f:
         json.dump(current_events, f)
-    return
+    return current_events
 
 """
 READ AND RETURN BRAWL STARS CURRENT EVENTS
 """
-def readCurrentEvents(filepath):
+def readCurrentEvents(dataPath):
     with open(dataPath+'/events/current_events.json') as f:
         current_events = json.load(f)
     return current_events
 
 """
-DELETE OUTDATED EVENT FILES
-"""
-def delOldCurrentBattles():
-    currentEventsId = []
-    currentEvents = readCurrentEvents("todo")
-    for event in currentEvents:
-        currentEventsId.append(event["event"]["id"])
-
-    for (dirpath, dirnames, filenames) in os.walk(currentBattlePath):
-        for filename in filenames:
-            fn = filename.split(".")
-            oldEventId = int(fn[0])
-            if oldEventId not in currentEventsId:
-                os.remove(currentBattlePath+"/"+str(oldEventId)+".json")
-
-"""
-ROTATE OUTDATED EVENT FILES
-"""
-def rotateEvents(maxBattlesPerEvent):
-    currentEventsId = []
-    currentEvents = readCurrentEvents("todo")
-    for event in currentEvents:
-        currentEventsId.append(event["event"]["id"])
-
-    for (dirpath, dirnames, filenames) in os.walk(currentBattlePath):
-        for filename in filenames:
-            fn = filename.split(".")
-            oldEventId = int(fn[0])
-            if oldEventId not in currentEventsId:
-                try:
-                    with open(currentBattlePath+"/"+str(oldEventId)+".json", 'r+') as f:
-                        print(currentBattlePath+"/"+str(oldEventId)+".json")
-                        data=json.load(f)
-                    
-                    if len(data)>maxBattlesPerEvent:
-                        data=data[-maxBattlesPerEvent:]
-
-                    with open(allBattlePath+"/"+str(oldEventId)+".json", 'w') as f:
-                        json.dump(data[-maxBattlesPerEvent:], f, indent=4)
-                except:
-                    print("NO EVENT FILE")
-
-                if len(data)>maxBattlesPerEvent:
-                        data=data[-maxBattlesPerEvent:]
-                with open(allBattlePath+"/"+str(oldEventId)+".json", 'w') as f:
-                    json.dump(data[-maxBattlesPerEvent:], f, indent=4)
-                try:
-                    os.remove(currentBattlePath+"/"+str(oldEventId)+".json")
-                except:
-                    print("NO FILE TO REMOVE")
-
-"""
 READ AND RETURN BRAWL STARS EVENTS STATS
 """
-def readEventsStats(event, soloOrTeams):
+def readEventsStats(event, soloOrTeams, dataPath):
     with open(dataPath+'/stats/'+str(event["event"]["id"])+'.json') as f:
         events_stats = json.load(f)
     return events_stats[soloOrTeams], events_stats["battlesNumber"]
@@ -130,13 +69,12 @@ def readEventsStats(event, soloOrTeams):
 """
 MAKE REST API GET CALL TO RETRIEVE BRAWL STARS RANKINGS BASED ON COUNTRY LIST
 """
-def getRankings(token, countries_list, player_limit):
+def getRankings(token, countries_list, player_limit, baseUrl):
     ranks_list = {}
     headers = {'Authorization': 'Bearer '+token}
     data = {}
     for country in countries_list:
-        url = "https://api.brawlstars.com/v1/rankings/" + \
-            country+"/players?limit="+str(player_limit)
+        url = baseUrl+"/rankings/"+country+"/players?limit="+str(player_limit)
         response = requests.request("GET", url, headers=headers, data=data)
         ranks_list[country] = response.json()
         print("Country:" + country + ", Response code: " +
@@ -146,7 +84,16 @@ def getRankings(token, countries_list, player_limit):
 """
 MAKE REST API GET CALL TO RETRIEVE BRAWL STARS RANKINGS BASED ON COUNTRY LIST
 """
-def getBattlelogs(token, ranks_list):
+def getBattlelogsBACK(token, ranks_list):
+    battlelogs_list = {}
+    battlelogs = {}
+    for country in ranks_list:
+        battlelogs.clear()
+        getBattlelogsApiCalls(country, ranks_list, battlelogs, token)
+    battlelogs_list[country] = battlelogs
+    return battlelogs_list
+
+def getBattlelogs(token, ranks_list, baseUrl):
     battlelogs_list = {}
     battlelogs = {}
     threads = []
@@ -155,7 +102,7 @@ def getBattlelogs(token, ranks_list):
         for country in ranks_list:
             battlelogs.clear()
             threads.append(executor.submit(getBattlelogsApiCalls,
-                           country, ranks_list, battlelogs, token))
+                           country, ranks_list, battlelogs, token, baseUrl))
 
         for task in as_completed(threads):
             done = True
@@ -165,20 +112,20 @@ def getBattlelogs(token, ranks_list):
 """
 MAKE REST API GET CALL TO RETRIEVE BRAWL STARS RANKINGS BASED ON COUNTRY LIST - THREAD
 """
-def getBattlelogsApiCalls(country, ranks_list, battlelogs, token):
+def getBattlelogsApiCalls(country, ranks_list, battlelogs, token, baseUrl):
     headers = {'Authorization': 'Bearer '+token}
     data = {}
     for player in ranks_list[country]['items']:
         tag = player["tag"]
         url_tag = tag.replace("#", "%23")
-        response = requests.request(
-            "GET", "https://api.brawlstars.com/v1/players/"+url_tag+"/battlelog", headers=headers, data=data)
+        response = requests.request("GET", baseUrl+"/players/"+url_tag+"/battlelog", headers=headers, data=data)
         battlelog = response.json()
-
-        for battle in battlelog["items"]:
-            # add the tag of the corresponding player in order to handle showdown
-            battle["playerTag"] = tag
-        battlelogs[tag] = battlelog
+        print(f"TAG :{url_tag}, Status code: {response.status_code}")
+        if(response.status_code!=500):
+            for battle in battlelog["items"]:
+                # add the tag of the corresponding player in order to handle showdown
+                battle["playerTag"] = tag
+            battlelogs[tag] = battlelog
     return battlelogs
 
 """
@@ -270,10 +217,9 @@ def remove_team_duplicate(team):
 """
 COMPUTE AND STORE STATS
 """
-def storeBestTeam():
-    dataFolder = Path(currentBattlePath)
+def storeBestTeam(currentEvent, dataPath, battlePath):
+    dataFolder = Path(battlePath)
     dataFolder.mkdir(parents=True, exist_ok=True)
-    currentEvent = readCurrentEvents("TODO")
     for event in currentEvent:
         map = event["event"]["map"]
         mode = event["event"]["mode"]
@@ -281,7 +227,7 @@ def storeBestTeam():
         winTeams = []
         loseTeams = []
         try:
-            with open(currentBattlePath+path_separator+str(event["event"]["id"])+".json", 'r') as f:
+            with open(battlePath+path_separator+str(event["event"]["id"])+".json", 'r') as f:
                 battles_mode_map = json.load(f)
         except:
             print("NO DATA")
@@ -388,7 +334,7 @@ def getListOfFiles(dirName):
 """
 STORE BATTLES IN BATTLES DIR
 """
-def storeBattles(battlelogsList, limitNumberOfBattles, expectedModes, maxBattlesPerEvent):
+def storeBattles(battlelogsList, limitNumberOfBattles, expectedModes, maxBattlesPerEvent, battlePath, curentEvent):
     battles={}
     go = False
     numberOfBattles = 0
@@ -400,9 +346,8 @@ def storeBattles(battlelogsList, limitNumberOfBattles, expectedModes, maxBattles
     duppBattle = 0
     lenBattles={}
     alreadyStoredBattle = 0
-    curentEvent = readCurrentEvents("TODO")
     currentEventId=[]
-    dataFolder = Path(currentBattlePath)
+    dataFolder = Path(battlePath)
     dataFolder.mkdir(parents=True, exist_ok=True)
 
     for event in curentEvent:
@@ -410,7 +355,7 @@ def storeBattles(battlelogsList, limitNumberOfBattles, expectedModes, maxBattles
 
     for eventId in currentEventId:
         try:
-            with open(f"{currentBattlePath}/{eventId}.json", 'r') as f:
+            with open(f"{battlePath}/{eventId}.json", 'r') as f:
                 battles[eventId]=json.load(f)
             lenBattles[eventId]=len(battles[eventId])
         except:
@@ -448,9 +393,9 @@ def storeBattles(battlelogsList, limitNumberOfBattles, expectedModes, maxBattles
         battlesNoDupp = remove_dupe_dicts(battles[eventId])
         duppBattle = duppBattle + (len(battles[eventId])-len(battlesNoDupp))
         newBattle=newBattle+(len(battlesNoDupp)-lenBattles[eventId])
-        #if len(battlesNoDupp) > maxBattlesPerEvent:
-            #battlesNoDupp[-maxBattlesPerEvent:]
-        with open(f"{currentBattlePath}/{eventId}.json", 'w') as f:
+        if len(battlesNoDupp) > maxBattlesPerEvent:
+            battlesNoDupp=battlesNoDupp[-maxBattlesPerEvent:]
+        with open(f"{battlePath}/{eventId}.json", 'w') as f:
             json.dump(battlesNoDupp, f, indent=4)
     return newBattle, duppBattle, battleInEvent, total
 

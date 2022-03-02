@@ -2,6 +2,16 @@ from functions import *
 import time
 from datetime import datetime
 import configparser
+from dotenv import load_dotenv
+
+load_dotenv()
+
+dataPath = os.environ["BRAWL_COACH_DATAPATH"]
+backPath = os.environ["BRAWL_COACH_BACKPATH"]
+logPath = os.environ["BRAWL_COACH_LOGPATH"]
+token = os.environ["BRAWL_COACH_TOKEN"]
+baseUrl = os.environ["BRAWL_STARS_API_BASE_URL"]
+battlePath = dataPath+"/battles"
 
 """
 READ CONFIG
@@ -14,6 +24,7 @@ GLOBAL VARIABLES
 """
 config = configparser.ConfigParser()
 config.read('config.ini')
+
 player_limit = int(config['DEFAULT']['playerLimit'])
 limitNumberOfBattles = int(config['DEFAULT']['limitNumberOfBattles'])
 countries_list = json.loads(config['DEFAULT']['countryList'])
@@ -25,28 +36,26 @@ logFileName = logPath+path_separator+"timeLog.txt"
 MAIN
 """
 start2 = time.time()
-getCurrentEvents(token)
-#delOldCurrentBattles()
-rotateEvents(maxBattlesPerEvent)
+currentEvent=getCurrentEvents(token, baseUrl, dataPath)
 
 print("\n***getRankings***\n")
-ranks = getRankings(token, countries_list, player_limit)
+ranks = getRankings(token, countries_list, player_limit, baseUrl)
 
 print("\n***getBattlelogs***\n")
-battlelogs = getBattlelogs(token, ranks)
+battlelogs = getBattlelogs(token, ranks, baseUrl)
 end2 = time.time()
 callTime = end2 - start2
 
 print("\n***STORE BATTLES***\n")
 start3 = time.time()
 newBattle, duppBattle, interestingBattle, totalBattle = storeBattles(
-    battlelogs, limitNumberOfBattles, expectedModes, maxBattlesPerEvent)
+    battlelogs, limitNumberOfBattles, expectedModes, maxBattlesPerEvent, battlePath, currentEvent)
 end3 = time.time()
 storeBattleTime = end3 - start3
 
 print("\n***COMPUTE BEST BRAWLER***\n")
 start4 = time.time()
-storeBestTeam()
+storeBestTeam(currentEvent, dataPath, battlePath)
 end4 = time.time()
 computeBestBrawler = end4 - start4
 
